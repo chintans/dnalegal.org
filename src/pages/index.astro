@@ -1,11 +1,167 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Home">
+  <!-- Hero Section -->
+  <section class="relative py-24 md:py-36 overflow-hidden flex items-center bg-slate-950">
+    <!-- Glowing background patterns -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(197,168,128,0.08),rgba(255,255,255,0))]"></div>
+    <div class="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_70%_120px,rgba(30,41,59,0.5),rgba(255,255,255,0))]"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6 animate-pulse">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+        Advocates & Solicitors
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-serif-legal font-bold tracking-tight text-white leading-none mb-6">
+        Trusted Counsel.<br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500">Decisive Results.</span>
+      </h1>
+      
+      <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg leading-relaxed font-sans mb-10">
+        Anchored in New Delhi with chambers at the Supreme Court of India, DNA Legal pairs a deep-rooted heritage of legal advocacy with a technology-driven, commercial sensibility.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a 
+          href="/practice-areas" 
+          class="w-full sm:w-auto px-8 py-3.5 rounded bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-bold hover:from-amber-550 hover:to-amber-450 hover:shadow-lg hover:shadow-amber-500/10 transition-all uppercase text-xs tracking-widest text-center"
+        >
+          Explore Practice Areas
+        </a>
+        <a 
+          href="/about" 
+          class="w-full sm:w-auto px-8 py-3.5 rounded border border-slate-700 text-slate-350 hover:text-white hover:bg-slate-900 hover:border-slate-550 transition-all uppercase text-xs tracking-widest text-center font-semibold"
+        >
+          Our Story
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BCI Regulatory Disclaimer Panel -->
+  <section class="py-12 bg-slate-900 border-y border-slate-900/60 font-sans">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-950/50 border border-slate-800 rounded-lg p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-500">BCI Compliance Notice</h2>
+          <p class="text-xs leading-relaxed text-slate-450 max-w-2xl">
+            This website and its subpages are designed strictly to present factual information regarding DNA Legal's team, locations, and practices in conformity with Rule 36 of the Bar Council of India Rules. No advertising or solicitation is intended.
+          </p>
+        </div>
+        <button 
+          id="btn-trigger-disclaimer-panel"
+          class="px-5 py-2.5 rounded border border-amber-500/30 hover:border-amber-500/60 text-amber-400 hover:text-amber-300 bg-amber-500/5 transition-all text-xs uppercase tracking-wider font-semibold cursor-pointer whitespace-nowrap"
+        >
+          Read Full Disclaimer
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Pillars / Philosophy Section -->
+  <section class="py-20 md:py-28 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold uppercase tracking-widest text-amber-500 block mb-3">Our Practice</span>
+        <h2 class="text-3xl md:text-4xl font-serif-legal font-bold text-white tracking-wide">
+          A Legacy of Legal Excellence
+        </h2>
+        <p class="text-slate-450 mt-4 text-sm md:text-base leading-relaxed font-sans">
+          We combine the institutional wisdom of India’s pioneer advocates with the speed, pragmatism, and commercial agility required in today's landscape.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Pillar 1 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg space-y-4">
+          <div class="text-amber-500">
+            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Heritage, Carried Forward</h3>
+          <p class="text-slate-400 text-xs leading-relaxed font-sans">
+            We inherit a benchmark-setting advocacy tradition from J. B. Dadachanji & Company and Ravinder Narain & Company. For us, preparation, persuasion, and accountability shape every brief.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg space-y-4">
+          <div class="text-amber-500">
+            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Partner-Led Attention</h3>
+          <p class="text-slate-400 text-xs leading-relaxed font-sans">
+            Every file is driven by a partner or principal associate from the initial brief to final arguments. There are no handovers to junior counsel after the pitch, ensuring personal accountability.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg space-y-4">
+          <div class="text-amber-500">
+            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
+            </svg>
+          </div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Commercial Sensibility</h3>
+          <p class="text-slate-400 text-xs leading-relaxed font-sans">
+            We are litigators who think like a board. Our counsel is calibrated to commercial reality: cost of recovery, reputational exposure, management distraction, and strategic objectives.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg space-y-4">
+          <div class="text-amber-500">
+            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2.5M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+            </svg>
+          </div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Pan-India Reach</h3>
+          <p class="text-slate-400 text-xs leading-relaxed font-sans">
+            Headquartered in New Delhi, we appear regularly before the Supreme Court of India, Delhi High Court, and commercial benches (NCLT, DRT, NCDRC, CCI) across the country through our vetted network.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="py-16 md:py-24 bg-slate-900 border-t border-slate-850">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-amber-500/30 text-5xl md:text-7xl font-serif-legal block mb-2 leading-none">“</span>
+      <blockquote class="text-2xl md:text-3xl font-serif-legal text-slate-200 tracking-wide leading-relaxed italic mb-4">
+        The life of the law has not been logic; it has been experience.
+      </blockquote>
+      <cite class="text-xs uppercase tracking-widest text-amber-500 font-sans font-semibold not-italic">
+        — Oliver Wendell Holmes Jr.
+      </cite>
+    </div>
+  </section>
+
+  <script>
+    function setupHomeDisclaimerTrigger() {
+      const btn = document.getElementById('btn-trigger-disclaimer-panel');
+      const modal = document.getElementById('bci-disclaimer-modal');
+      const content = document.getElementById('disclaimer-content');
+      
+      btn?.addEventListener('click', () => {
+        if (!modal || !content) return;
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => {
+          modal.classList.add('opacity-100');
+          content.classList.remove('scale-95', 'opacity-0');
+          content.classList.add('scale-100', 'opacity-100');
+        });
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', setupHomeDisclaimerTrigger);
+    document.addEventListener('astro:after-swap', setupHomeDisclaimerTrigger);
+  </script>
+</BaseLayout>

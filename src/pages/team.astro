@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TeamCard from '../components/TeamCard.astro';
+---
+
+<BaseLayout title="The Team">
+  <!-- Page Header -->
+  <section class="relative py-20 bg-slate-950 border-b border-slate-900">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.05),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest text-amber-500 block mb-3">Our Professionals</span>
+      <h1 class="text-4xl md:text-5xl font-serif-legal font-bold text-white tracking-wide">
+        The Team
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-400 text-sm md:text-base leading-relaxed">
+        DNA Legal is structured to combine the experience of senior partners with the agility of a new generation of professionals. Every brief is partner-led.
+      </p>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="py-20 bg-slate-950 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-slate-900 pb-4 mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Partners</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Ajay Aggarwal -->
+        <TeamCard
+          name="Ajay Aggarwal"
+          role="Founding Partner"
+          details="Life Member, Supreme Court Bar Association"
+          subRole="SCBA Membership A-00348"
+          bio="Founder of the firm. In his two decades of practice, he has focused primarily on litigation and advisory work in constitutional law and taxation, with a special reference to indirect taxes both Central and State (including Central Excise, Customs, Service Tax, Sales Tax, Entry Tax, Motor Vehicle Taxation, Electricity Duty, VAT, GST, and other State levies and cesses).\n\nHe also handles significant matters in direct taxation, SEBI laws, company law, securitisation, property law, contracts, and arbitration. Mr. Aggarwal has briefed and instructed leading designated Senior Advocates of the Supreme Court and the High Courts, many of whom were subsequently elevated to the Bench. He has argued matters before various Tribunals, regulators, and statutory authorities, and his work is reflected in more than 150 reported judgments."
+        />
+
+        <!-- Adarsh Kumar Aggarwal -->
+        <TeamCard
+          name="Adarsh Kumar Aggarwal"
+          role="Founding Partner"
+          details="Litigation & Commercial Disputes Practice Head"
+          bio="Adarsh Kumar Aggarwal is a distinguished legal professional who co-founded the firm. With over two decades of experience, his practice is centred on the Delhi High Court, the Punjab & Haryana High Court, and quasi-judicial tribunals.\n\nHe heads the commercial disputes practice of the firm, and his areas of expertise span civil and commercial litigation, with a strong emphasis on recovery suits, rendition-of-accounts cases, mortgage suits, winding-up matters, and arbitration. He also handles allied criminal matters that frequently emerge alongside civil and commercial litigation. This integrated approach allows him to provide clients with comprehensive, end-to-end representation."
+        />
+
+        <!-- Sushil Kumar Singhal -->
+        <TeamCard
+          name="Sushil Kumar Singhal"
+          role="Partner"
+          details="IBBI Registered Insolvency Professional"
+          bio="Sushil Kumar Singhal brings more than twenty-five years of experience in highway and building construction (including project planning, preparation, supervision, and contract management on more than twenty projects with an aggregate cost of approximately ₹6,000 crores) to a five-year insolvency practice.\n\nAs a Registered Insolvency Professional with the IBBI, he provides the full spectrum of insolvency services to clients, including liquidations, voluntary arrangements, administration, receiverships, and bankruptcy. He is actively engaged in insolvency, restructuring, and reorganisation proceedings under the Companies Act, 1956 / 2013 and the IBC, 2016, and regularly appears before the NCLT and the Delhi High Court. He is a member of the NCLT/NCLAT Bar Association, the DHCBA, and the SCBA."
+        />
+
+        <!-- Parveen Bhati -->
+        <TeamCard
+          name="Parveen Bhati"
+          role="Partner"
+          details="Criminal Litigation Practice Head"
+          bio="Parveen Bhati heads the firm's criminal litigation practice. He brings nearly three decades of courtroom experience across trial and appellate work in criminal litigation.\n\nHis practice covers the full criminal calendar, including offences under the IPC, the Negotiable Instruments Act, the Prevention of Money Laundering Act (PMLA), the Prevention of Corruption Act, and prosecutions under the Companies Act.\n\nMr. Bhati has served as Additional Public Prosecutor for the State of Delhi. That prosecutorial experience informs the strategy he brings to the firm's defence mandates today. He has also served as a Member of the OBC Commission for Delhi."
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal Associates Section -->
+  <section class="py-20 bg-slate-900 border-y border-slate-950 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-slate-800 pb-4 mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Principal Associates & Specialists</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Siddharth Banthia -->
+        <TeamCard
+          name="Siddharth Banthia"
+          role="Principal Associate"
+          details="Real Estate & Insolvency Disputes"
+          bio="Siddharth Banthia anchors the firm's real estate and insolvency dispute practice. He has over a decade of contested practice before the NCDRC, State and District Consumer Commissions, NCLT, NCLAT, CCI, RERA authorities, Punjab & Haryana High Court, Delhi High Court, and the Supreme Court of India.\n\nHis work covers the full life cycle of real-estate and commercial disputes, advising financial and operational creditors and resolution professionals in real-estate CIRPs, contested admission proceedings, and avoidance applications."
+        />
+
+        <!-- Vishnu Kant -->
+        <TeamCard
+          name="Vishnu Kant"
+          role="Principal Associate"
+          details="Advocate-on-Record, Supreme Court of India"
+          bio="Vishnu Kant is an Advocate-on-Record at the Supreme Court of India and conducts the firm's filings and proceedings before the Court.\n\nHis practice spans the full range of original and appellate work before the Court, including Article 32 writ petitions, Article 136 special leave petitions, transfer petitions, and review and curative petitions, across the firm's commercial, real estate, insolvency, taxation, and criminal mandates. He works closely with partners and arguing counsel on strategic positioning."
+        />
+
+        <!-- Abhishek Dagar -->
+        <TeamCard
+          name="Abhishek Dagar"
+          role="Principal Associate"
+          details="Commercial, Real Estate & Tax Practice"
+          bio="Abhishek Dagar anchors the firm's commercial disputes, real estate, and taxation practice. His commercial work covers recovery proceedings and summary suits before the Commercial Courts, Negotiable Instruments Act filings, and contractual disputes.\n\nOn the real estate side, he represents clients in NCDRC, RERA, and civil court proceedings regarding refunds, delayed possession, and project deficiencies. He also appears on writ matters against Development Authorities and indirect tax litigation."
+        />
+
+        <!-- Mukul Singhla -->
+        <TeamCard
+          name="Mukul Singhla"
+          role="Principal Associate"
+          details="Commercial Litigation & Recovery"
+          bio="Mukul Singhla is a key member of the firm, focusing on commercial suits before the Commercial Courts, the Punjab and Haryana High Court, recovery proceedings before the Debt Recovery Tribunal, contractual disputes, arbitration, and shareholder litigation.\n\nHe works closely with lending and corporate clients on recovery actions, security enforcement, and settlement architecture. He is recognised for the quality of his drafting and is the principal author of pleadings."
+        />
+
+        <!-- Sandeep Sharma -->
+        <TeamCard
+          name="Sandeep Sharma"
+          role="Specialist"
+          details="Project, Construction & Contract Management"
+          bio="Sandeep Sharma brings extensive cross-disciplinary experience in the planning, monitoring, and execution of construction and infrastructure projects across India and abroad.\n\nHe works closely with the firm's lawyers on the techno-commercial aspects of construction and EPC disputes, including the preparation of project schedules, cost estimates, claims documentation, and contract analysis, ensuring engineering realities align with legal strategies."
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Associates Section -->
+  <section class="py-20 bg-slate-950 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-slate-900 pb-4 mb-8">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Associates</h2>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-8">
+        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6">
+          Our associates support partner-led mandates across litigation and advisory work, with a focused discipline on drafting, research, hearings before Tribunals and District Courts, and daily client communications.
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-800/80">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+            <div>
+              <h4 class="font-serif-legal text-lg font-bold text-slate-200">Rajnandini Dutta</h4>
+              <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold font-sans">Associate</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+            <div>
+              <h4 class="font-serif-legal text-lg font-bold text-slate-200">Sarthak Singh</h4>
+              <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold font-sans">Associate</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+            <div>
+              <h4 class="font-serif-legal text-lg font-bold text-slate-200">Shikha Bharti</h4>
+              <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold font-sans">Associate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,242 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PracticeAreaCard from '../components/PracticeAreaCard.astro';
+---
+
+<BaseLayout title="Practice Areas">
+  <!-- Page Header -->
+  <section class="relative py-20 bg-slate-950 border-b border-slate-900">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.05),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest text-amber-500 block mb-3">Our Expertise</span>
+      <h1 class="text-4xl md:text-5xl font-serif-legal font-bold text-white tracking-wide">
+        Areas of Practice
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-400 text-sm md:text-base leading-relaxed">
+        DNA Legal offers a full spectrum of dispute resolution and advisory services, with a particular emphasis on commercial disputes, debt recovery, and regulatory litigation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Practice Grid -->
+  <section class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Commercial Disputes -->
+        <PracticeAreaCard
+          title="Commercial Disputes"
+          icon="briefcase"
+          description="The strategic core of our practice. We act in high-value, sensitive commercial disputes where the stakes are material and timelines critical. We sequence drafting, forum selection, interim relief, and asset tracing from day one."
+          subpractice={[
+            "Strategic Litigation Planning",
+            "High Court & Appellate Advocacy",
+            "Interim Relief & Asset Tracing",
+            "Settlement Architecture & Execution"
+          ]}
+        />
+
+        <!-- Recovery Suits -->
+        <PracticeAreaCard
+          title="Recovery Suits"
+          icon="scale"
+          description="Routine prosecution and defense of recovery actions under the Commercial Courts Act, 2015 and DRTs under the RDB Act, 1993. Full toolkit covering Order XXXVII summary suits, SARFAESI proceedings, and attachment."
+          subpractice={[
+            "Commercial Courts Act Actions",
+            "Debt Recovery Tribunal (DRT) filings",
+            "SARFAESI & Asset Enforcement",
+            "Mareva-style Interlocutory Relief"
+          ]}
+        />
+
+        <!-- Contract Enforcement -->
+        <PracticeAreaCard
+          title="Contract Enforcement"
+          icon="shield"
+          description="Distinguished practice in suits for specific performance, damages for breach of contract, mortgage suits, and rendition of accounts. Extensive experience in supply, JV, and construction/EPC contracts."
+          subpractice={[
+            "Specific Performance Suits",
+            "Breach of Contract Damages",
+            "EPC & Infrastructure Disputes",
+            "Joint Venture & Shareholder Agreements"
+          ]}
+        />
+
+        <!-- Commercial Arbitration -->
+        <PracticeAreaCard
+          title="Commercial Arbitration"
+          icon="scale"
+          description="Counsel in domestic and institutional arbitrations seated in India, spanning construction, infrastructure, FMCG, and contractual claims, along with the full range of flanking court support work."
+          subpractice={[
+            "Domestic & Ad-hoc Arbitrations",
+            "Institutional Arbitration Representation",
+            "Section 9 & Section 34 Court Filings",
+            "Enforcement of Arbitral Awards"
+          ]}
+        />
+
+        <!-- Constitutional & Taxation -->
+        <PracticeAreaCard
+          title="Constitutional & Taxation"
+          icon="tax"
+          description="Sustained appellate record in indirect tax litigation (GST, Customs, Excise, Service Tax, VAT, Entry Tax) from departmental adjudication up to the Supreme Court, including writ challenges under Articles 32 and 226."
+          subpractice={[
+            "GST, Customs & Indirect Taxes",
+            "Appellate Adjudication Representation",
+            "Writ Challenges to Arrests & Seizures",
+            "Constitutional Validity Challenges"
+          ]}
+        />
+
+        <!-- Real Estate -->
+        <PracticeAreaCard
+          title="Real Estate"
+          icon="building"
+          description="360-degree perspective representing developers and home-buyer associations (over 850 & 1,600 members) in landmark RERA, NCDRC, High Court, and Supreme Court matters, establishing buyer rights."
+          subpractice={[
+            "RERA & Consumer Commission Litigation",
+            "Developer Representation",
+            "Home-Buyer Association Disputes",
+            "DLF, Raheja, Kolkata West Landmark Cases"
+          ]}
+        />
+
+        <!-- Insolvency & Bankruptcy -->
+        <PracticeAreaCard
+          title="Insolvency & Bankruptcy"
+          icon="bank"
+          description="Representing resolution professionals, liquidators, financial/operational creditors, and personal guarantors before NCLT and NCLAT under the IBC, 2016. Integrated insolvency professional services."
+          subpractice={[
+            "NCLT & NCLAT Representation",
+            "Insolvency Professional Services (IBBI)",
+            "CIRP Positioning & Negotiations",
+            "Avoidance Applications & Liquidation"
+          ]}
+        />
+
+        <!-- Banking & Finance -->
+        <PracticeAreaCard
+          title="Banking & Finance"
+          icon="bank"
+          description="Predominantly borrower-side representation advising corporate borrowers, promoters, and personal guarantors on debt restructuring, one-time settlements (OTS), and SARFAESI defence."
+          subpractice={[
+            "Borrower-Side Strategic Advisory",
+            "One-Time Settlements (OTS)",
+            "SARFAESI Defence & DRT Filings",
+            "RBI Prudential Framework Restructuring"
+          ]}
+        />
+
+        <!-- Private Client Practice -->
+        <PracticeAreaCard
+          title="Private Client Practice"
+          icon="user"
+          description="Serving promoter families, industrialists, and HNIs in matters sitting at the intersection of family, succession, and commerce, bringing our trademark litigation muscle with strict discretion."
+          subpractice={[
+            "Family Settlements & Partition",
+            "Wills, Probate & Administration",
+            "Private Trust Structures & Succession",
+            "Matrimonial & Property Disputes"
+          ]}
+        />
+
+        <!-- White Collar & Economic Offences -->
+        <PracticeAreaCard
+          title="White Collar & Economic Offences"
+          icon="shield"
+          description="Defending corporates, directors, and promoters before the Enforcement Directorate (ED), SFIO, EOW, and CBI. Strategy for PMLA, interrogation, bail, and LOC challenges."
+          subpractice={[
+            "PMLA & ED Representation",
+            "SFIO & CBI Interrogation Strategy",
+            "Anticipatory Bail & LOC Challenges",
+            "Adjudication & Appellate Tribunal under PMLA"
+          ]}
+        />
+
+        <!-- Allied Criminal Litigation -->
+        <PracticeAreaCard
+          title="Allied Criminal Litigation"
+          icon="scale"
+          description="Handling EOW complaints and criminal proceedings spawned by commercial disputes as an integrated part of the brief, aligning the criminal docket with overall commercial goals."
+          subpractice={[
+            "Economic Offences Wing (EOW) Complaints",
+            "Commercial Criminal Cross-Filings",
+            "Corporate Criminal Compliance & Defence"
+          ]}
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries & Sectors Served (Grouped Client Community for BCI Compliance) -->
+  <section class="py-20 md:py-24 bg-slate-900 border-t border-slate-950 font-sans">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold uppercase tracking-widest text-amber-500 block mb-3">Industries Served</span>
+        <h2 class="text-3xl font-serif-legal font-bold text-white tracking-wide">
+          Sectors We Represent
+        </h2>
+        <p class="text-slate-400 mt-4 text-xs md:text-sm leading-relaxed max-w-xl mx-auto">
+          DNA Legal and its lawyers have acted for a representative cross-section of Indian businesses, public undertakings, and financial institutions across key commercial sectors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Sector 1 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Real Estate & Infrastructure</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Representing developer groups, infrastructure majors, and large home-buyer associations in regulatory, consumer, and corporate insolvency forums.
+          </p>
+        </div>
+
+        <!-- Sector 2 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Banking & Financial Services</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Advising corporate borrowers and promoter groups on debt restructuring, securitization disputes, and OTS negotiations before recovery tribunals.
+          </p>
+        </div>
+
+        <!-- Sector 3 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">FMCG & Consumer Goods</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Handling contractual enforcements, brand distribution litigations, commercial arbitration, and indirect tax disputes for consumer brand corporations.
+          </p>
+        </div>
+
+        <!-- Sector 4 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Public Sector & Government</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Advising and acting on instructions for public sector undertakings, tourism corporations, and state steel authorities in complex civil disputes.
+          </p>
+        </div>
+
+        <!-- Sector 5 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Manufacturing & Industry</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Representing automotive conglomerates, chemical manufacturers, and industrial engineering corporations in corporate dispute resolutions.
+          </p>
+        </div>
+
+        <!-- Sector 6 -->
+        <div class="bg-slate-950 border border-slate-850 p-6 rounded-lg space-y-4">
+          <div class="h-1.5 w-12 bg-amber-500/50 rounded"></div>
+          <h3 class="font-serif-legal text-lg font-bold text-slate-100">Private Clients & Promoters</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Assisting promoter families, industrialists, and high-net-worth individuals in succession planning, family partitions, and private trust structures.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

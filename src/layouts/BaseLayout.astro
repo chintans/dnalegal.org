@@ -1,0 +1,190 @@
+---
+import Disclaimer from '../components/Disclaimer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counsel. Decisive Results." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="bg-slate-950 text-slate-100 selection:bg-amber-500/30 selection:text-amber-200">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title} | DNA Legal — Advocates & Solicitors</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col min-h-screen font-sans bg-slate-950 text-slate-200 antialiased overflow-x-hidden">
+    
+    <!-- BCI Disclaimer Modal -->
+    <Disclaimer />
+    
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-900/80 bg-slate-950/80 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo Section -->
+          <a href="/" class="flex flex-col select-none group">
+            <span class="font-serif-legal text-2xl font-bold tracking-widest text-slate-100 group-hover:text-amber-400 transition-colors duration-300">
+              DNA LEGAL
+            </span>
+            <span class="text-[9px] font-sans font-medium tracking-[0.25em] uppercase text-amber-500/90 group-hover:text-amber-300 transition-colors duration-300">
+              Advocates & Solicitors
+            </span>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8 items-center font-sans text-sm font-medium uppercase tracking-wider">
+            <a href="/" class="text-slate-350 hover:text-amber-400 py-2 border-b-2 border-transparent hover:border-amber-500/50 transition-all duration-300">Home</a>
+            <a href="/about" class="text-slate-350 hover:text-amber-400 py-2 border-b-2 border-transparent hover:border-amber-500/50 transition-all duration-300">Our Story</a>
+            <a href="/practice-areas" class="text-slate-350 hover:text-amber-400 py-2 border-b-2 border-transparent hover:border-amber-500/50 transition-all duration-300">Practice Areas</a>
+            <a href="/team" class="text-slate-350 hover:text-amber-400 py-2 border-b-2 border-transparent hover:border-amber-500/50 transition-all duration-300">The Team</a>
+            <a href="/contact" class="text-slate-350 hover:text-amber-400 py-2 border-b-2 border-transparent hover:border-amber-500/50 transition-all duration-300">Contact</a>
+          </nav>
+          
+          <!-- Mobile Menu Button -->
+          <div class="flex md:hidden">
+            <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-550 cursor-pointer" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed -->
+              <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icon when menu is open -->
+              <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div class="hidden md:hidden bg-slate-950 border-b border-slate-900" id="mobile-menu">
+        <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 font-sans text-xs uppercase tracking-wider font-semibold">
+          <a href="/" class="text-slate-300 hover:bg-slate-900 hover:text-amber-400 block px-3 py-3 rounded-md transition-colors">Home</a>
+          <a href="/about" class="text-slate-300 hover:bg-slate-900 hover:text-amber-400 block px-3 py-3 rounded-md transition-colors">Our Story</a>
+          <a href="/practice-areas" class="text-slate-300 hover:bg-slate-900 hover:text-amber-400 block px-3 py-3 rounded-md transition-colors">Practice Areas</a>
+          <a href="/team" class="text-slate-300 hover:bg-slate-900 hover:text-amber-400 block px-3 py-3 rounded-md transition-colors">The Team</a>
+          <a href="/contact" class="text-slate-300 hover:bg-slate-900 hover:text-amber-400 block px-3 py-3 rounded-md transition-colors">Contact</a>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-slate-900/80 text-slate-400 py-12 md:py-16 font-sans">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+          <!-- Firm identity and disclaimer note -->
+          <div class="space-y-4">
+            <div class="flex flex-col select-none">
+              <span class="font-serif-legal text-xl font-bold tracking-wider text-slate-200">
+                DNA LEGAL
+              </span>
+              <span class="text-[8px] font-sans font-medium tracking-[0.25em] uppercase text-amber-500/90">
+                Advocates & Solicitors
+              </span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed max-w-sm">
+              DNA Legal is a premium law firm practicing across commercial, civil, tax, and criminal jurisdictions. Headquartered in New Delhi, the firm provides partner-led, strategic solutions to high-stakes legal matters.
+            </p>
+            <div class="text-[11px] text-slate-600 leading-relaxed border-t border-slate-900 pt-3 max-w-sm">
+              <strong>BCI Disclaimer Acknowledgment:</strong> Under Bar Council rules, the content of this website is for informational purposes only and cannot be construed as solicitation or advertisement.
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="space-y-4 md:pl-12">
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-slate-200">Navigation</h3>
+            <ul class="space-y-2.5 text-sm">
+              <li><a href="/" class="hover:text-amber-400 transition-colors">Home</a></li>
+              <li><a href="/about" class="hover:text-amber-400 transition-colors">Our Story</a></li>
+              <li><a href="/practice-areas" class="hover:text-amber-400 transition-colors">Practice Areas</a></li>
+              <li><a href="/team" class="hover:text-amber-400 transition-colors">The Team</a></li>
+              <li><a href="/contact" class="hover:text-amber-400 transition-colors">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <!-- Locations & Contact -->
+          <div class="space-y-4">
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-slate-200">Principal Office</h3>
+            <p class="text-xs leading-relaxed text-slate-400 max-w-xs">
+              4A, Mathura Road, Jangpura-A,<br />
+              New Delhi - 110014, India
+            </p>
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-slate-200 pt-2">Supreme Court Chambers</h3>
+            <p class="text-xs leading-relaxed text-slate-400 max-w-xs">
+              Chamber No. 101, A. K. Sen Block,<br />
+              Supreme Court of India, New Delhi
+            </p>
+            <div class="pt-2 text-xs border-t border-slate-900">
+              <span class="text-slate-500">Landline:</span> <a href="tel:+911135569976" class="text-slate-350 hover:text-amber-400 transition-colors font-medium">+91 11 3556 9976</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-slate-900 text-center flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-600 gap-4">
+          <p>© {new Date().getFullYear()} DNA Legal. All rights reserved.</p>
+          <div class="flex gap-4">
+            <button id="footer-trigger-disclaimer" class="hover:text-amber-400 hover:underline cursor-pointer bg-transparent border-none p-0 text-[11px] text-slate-650">
+              View Disclaimer
+            </button>
+            <span>|</span>
+            <span>Advocates & Solicitors</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      function setupMenuAndDisclaimer() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const hIcon = document.getElementById('hamburger-icon');
+        const cIcon = document.getElementById('close-icon');
+        
+        btn?.addEventListener('click', () => {
+          menu?.classList.toggle('hidden');
+          hIcon?.classList.toggle('hidden');
+          cIcon?.classList.toggle('hidden');
+        });
+
+        // Trigger disclaimer again from footer
+        const footerBtn = document.getElementById('footer-trigger-disclaimer');
+        const modal = document.getElementById('bci-disclaimer-modal');
+        const content = document.getElementById('disclaimer-content');
+        
+        footerBtn?.addEventListener('click', () => {
+          if (!modal || !content) return;
+          modal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          requestAnimationFrame(() => {
+            modal.classList.add('opacity-100');
+            content.classList.remove('scale-95', 'opacity-0');
+            content.classList.add('scale-100', 'opacity-100');
+          });
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', setupMenuAndDisclaimer);
+      document.addEventListener('astro:after-swap', setupMenuAndDisclaimer);
+    </script>
+  </body>
+</html>

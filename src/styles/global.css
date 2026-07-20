@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif-legal {
+    font-family: 'Cormorant Garamond', Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+}
+
+/* Custom overlay style for compliance backdrop-blur-md */
+.backdrop-blur-custom {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}

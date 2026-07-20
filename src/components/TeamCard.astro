@@ -1,0 +1,47 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  subRole?: string;
+  details?: string;
+  bio: string;
+}
+
+const { name, role, subRole, details, bio } = Astro.props;
+---
+
+<div class="bg-slate-900 border border-slate-800 hover:border-amber-500/20 rounded-lg p-6 md:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/5 group relative">
+  <!-- Top decorative accent -->
+  <div class="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-amber-500/0 to-transparent group-hover:via-amber-500/40 transition-all duration-500"></div>
+
+  <div>
+    <!-- Header: Name and Role -->
+    <div class="flex flex-col md:flex-row md:items-baseline md:justify-between border-b border-slate-800/80 pb-4 mb-4 gap-2">
+      <div>
+        <h3 class="font-serif-legal text-2xl font-bold text-slate-100 tracking-wide group-hover:text-amber-400 transition-colors">
+          {name}
+        </h3>
+        {details && (
+          <p class="text-xs text-amber-500/80 font-sans tracking-wide mt-1 italic font-medium">
+            {details}
+          </p>
+        )}
+      </div>
+      <div class="flex flex-col items-start md:items-end">
+        <span class="inline-flex items-center px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase bg-amber-500/10 text-amber-400 border border-amber-500/20">
+          {role}
+        </span>
+        {subRole && (
+          <span class="text-[10px] text-slate-400 mt-1 font-mono uppercase tracking-widest">
+            {subRole}
+          </span>
+        )}
+      </div>
+    </div>
+
+    <!-- Biography / Description -->
+    <div class="text-slate-350 text-sm leading-relaxed font-sans space-y-3 whitespace-pre-line">
+      {bio}
+    </div>
+  </div>
+</div>
