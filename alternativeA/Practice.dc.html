@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/styles.css">
+<script src="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/_ds_bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --edge: clamp(20px, 5vw, 72px); }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); text-wrap: pretty; }
+a { color: var(--color-accent); }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
+.rule2 { height: 2px; background: var(--color-divider); border: 0; margin: 0; }
+.ph { padding: clamp(48px,6vw,96px) 0 clamp(40px,5vw,64px); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr); gap: 32px clamp(32px,5vw,72px); align-items: end; }
+.ph__k { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 22px; }
+.ph h1 { font-size: clamp(40px,5.6vw,80px); line-height: 0.99; letter-spacing: -0.03em; margin: 0; }
+.ph__lead { font-size: clamp(16px,1.5vw,20px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 48ch; }
+.forums { padding: 26px 0; font-size: 13.5px; line-height: 1.7; color: color-mix(in srgb,var(--color-text) 70%, transparent); }
+.forums b { color: var(--color-text); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; margin-right: 8px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 2px solid var(--color-divider); border-left: 2px solid var(--color-divider); }
+.cell { border-right: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); padding: 40px clamp(28px,3vw,48px); text-decoration: none; color: var(--color-text); display: flex; flex-direction: column; min-height: 240px; transition: background .15s; }
+.cell:hover { background: color-mix(in srgb, var(--color-accent) 6%, transparent); }
+.cell__n { font-family: var(--font-heading); font-weight: 800; font-size: 13px; color: var(--color-accent); letter-spacing: 0.1em; }
+.cell h3 { font-size: clamp(22px,2.2vw,28px); letter-spacing: -0.015em; margin: 16px 0 14px; max-width: 20ch; }
+.cell p { font-size: 15px; line-height: 1.62; margin: 0; color: color-mix(in srgb,var(--color-text) 76%,transparent); max-width: 44ch; }
+.cell__more { margin-top: auto; padding-top: 22px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent); }
+.cell__more span { opacity: 0; transition: opacity .15s; }
+.cell:hover .cell__more span { opacity: 1; }
+/* detail */
+.crumb { padding: 26px 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.crumb a { color: color-mix(in srgb,var(--color-text) 60%,transparent); text-decoration: none; }
+.crumb a:hover { color: var(--color-accent); }
+.crumb span { color: color-mix(in srgb,var(--color-text) 40%,transparent); margin: 0 10px; }
+.crumb b { color: var(--color-accent); font-weight: 400; }
+.dhead { padding: clamp(20px,3vw,40px) 0 clamp(44px,5vw,72px); }
+.dhead__n { font-family: var(--font-heading); font-weight: 800; font-size: clamp(60px,10vw,140px); line-height: 0.8; color: color-mix(in srgb,var(--color-accent) 18%,transparent); letter-spacing: -0.04em; margin: 0 0 8px; }
+.dhead h1 { font-size: clamp(38px,5vw,68px); line-height: 1; letter-spacing: -0.03em; margin: 0; max-width: 20ch; }
+.dhead__lead { font-size: clamp(17px,1.6vw,22px); line-height: 1.55; margin: 26px 0 0; max-width: 60ch; color: color-mix(in srgb,var(--color-text) 84%,transparent); }
+.dbody { display: grid; grid-template-columns: minmax(0,300px) minmax(0,1fr); gap: 40px clamp(32px,5vw,80px); align-items: start; padding-bottom: clamp(56px,7vw,96px); }
+.dside { position: sticky; top: 110px; }
+.dside h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 55%,transparent); margin: 0 0 18px; padding-bottom: 14px; border-bottom: 2px solid var(--color-divider); }
+.dside ul { list-style: none; margin: 0; padding: 0; }
+.dside li { font-size: 14px; line-height: 1.5; padding: 9px 0 9px 18px; position: relative; color: color-mix(in srgb,var(--color-text) 78%,transparent); }
+.dside li::before { content: ""; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--color-accent); }
+.dsec { border-top: 2px solid var(--color-divider); padding: 34px 0; }
+.dsec:first-child { border-top: 0; padding-top: 0; }
+.dsec h2 { font-size: clamp(23px,2.4vw,30px); letter-spacing: -0.015em; margin: 0 0 18px; }
+.dsec p { font-size: 16px; line-height: 1.72; margin: 0 0 16px; color: color-mix(in srgb,var(--color-text) 84%,transparent); max-width: 64ch; }
+.dnav { border-top: 2px solid var(--color-divider); display: grid; grid-template-columns: 1fr 1fr; }
+.dnav a { padding: 40px 0; text-decoration: none; color: var(--color-text); }
+.dnav a:last-child { text-align: right; padding-left: 32px; border-left: 2px solid var(--color-divider); padding-left: clamp(28px,4vw,64px); }
+.dnav a:first-child { padding-right: clamp(28px,4vw,64px); }
+.dnav small { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 55%,transparent); }
+.dnav b { display: block; font-family: var(--font-heading); font-weight: 800; font-size: clamp(18px,2vw,24px); letter-spacing: -0.01em; margin-top: 10px; }
+.dnav a:hover b { color: var(--color-accent); }
+@media (max-width: 820px) {
+  .ph { grid-template-columns: 1fr; align-items: start; } .grid { grid-template-columns: 1fr; }
+  .dbody { grid-template-columns: 1fr; } .dside { position: static; }
+  .dnav { grid-template-columns: 1fr; } .dnav a:last-child { text-align: left; border-left: 0; padding-left: 0; border-top: 2px solid var(--color-divider); }
+}
+</style>
+</helmet>
+<dc-import name="SiteNav" active="practice" hint-size="100%,84px"></dc-import>
+<hr class="rule2">
+<sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
+<div class="wrap">
+  <header class="ph">
+    <div>
+      <p class="ph__k">Areas of Practice</p>
+      <h1>Dispute resolution, end to end.</h1>
+    </div>
+    <p class="ph__lead">A full spectrum of dispute resolution and advisory services, with a particular emphasis on commercial disputes and recovery.</p>
+  </header>
+</div>
+<hr class="rule2">
+<div class="wrap">
+  <p class="forums"><b>We appear before</b>The Supreme Court of India · every major High Court · NCLAT · NCLT · NCDRC · CCI · RERA authorities · Debt Recovery Tribunals · Commercial Courts · and statutory authorities including the ED, SFIO, MCA and the Economic Offences Wing.</p>
+</div>
+<hr class="rule2">
+<div class="wrap" style="padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(56px,7vw,96px);">
+  <div class="grid">
+    <sc-for list="{{ areas }}" as="a" hint-placeholder-count="8">
+      <a class="cell" href="{{ a.href }}"><span class="cell__n">{{ a.num }}</span><h3>{{ a.title }}</h3><p>{{ a.card }}</p><span class="cell__more">Explore <span>→</span></span></a>
+    </sc-for>
+  </div>
+</div>
+</sc-if>
+<sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+<div class="wrap">
+  <nav class="crumb"><a href="Practice.dc.html">Practice</a><span>/</span><b>{{ area.title }}</b></nav>
+</div>
+<hr class="rule2">
+<div class="wrap">
+  <header class="dhead">
+    <p class="dhead__n">{{ area.num }}</p>
+    <h1>{{ area.title }}</h1>
+    <p class="dhead__lead">{{ area.lead }}</p>
+  </header>
+  <div class="dbody">
+    <aside class="dside">
+      <h4>Forums &amp; instruments</h4>
+      <ul>
+        <sc-for list="{{ area.forums }}" as="f" hint-placeholder-count="6"><li>{{ f }}</li></sc-for>
+      </ul>
+    </aside>
+    <div class="dmain">
+      <sc-for list="{{ area.sections }}" as="s" hint-placeholder-count="3">
+        <section class="dsec">
+          <h2>{{ s.h }}</h2>
+          <sc-for list="{{ s.paras }}" as="para" hint-placeholder-count="2"><p>{{ para }}</p></sc-for>
+        </section>
+      </sc-for>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="dnav">
+    <a href="{{ area.prevHref }}"><small>← Previous</small><b>{{ area.prevTitle }}</b></a>
+    <a href="{{ area.nextHref }}"><small>Next →</small><b>{{ area.nextTitle }}</b></a>
+  </div>
+</div>
+</sc-if>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  areasData() {
+    return [
+      { slug:"commercial-disputes", num:"01", title:"Commercial Disputes & Recovery",
+        card:"The strategic core of our practice — recovery suits, contract enforcement and execution, approached as a recovery exercise first.",
+        lead:"Commercial disputes are the strategic core of our practice. We approach every one as a recovery exercise first and a legal exercise second.",
+        forums:["Commercial Courts (2015 Act)","Debt Recovery Tribunals","Order XXXVII CPC summary suits","Section 19 RDB Act","SARFAESI proceedings","Attachment before judgment","Garnishee & Mareva relief"],
+        sections:[
+          {h:"The strategic core", paras:["We act for banks, NBFCs, manufacturers, traders, infrastructure majors, real estate developers, technology companies and promoters in disputes where the amount in controversy is material, the timeline is sensitive, and the reputational stakes are real.","Drafting, forum selection, interim relief, asset tracing, settlement architecture and execution strategy are sequenced from day one. The objective is not a paper victory — it is money in the client's account, or the client's position protected from exposure."]},
+          {h:"Recovery suits", paras:["We routinely prosecute and defend recovery actions before the Commercial Courts under the Commercial Courts Act, 2015 and the Debt Recovery Tribunals under the RDB Act, 1993. Our practice covers the full toolkit: summary suits, applications under Section 19, SARFAESI proceedings, attachment before judgment, and execution against the debtor's movable, immovable and financial assets.","We act both for institutional lenders pursuing recovery and for corporate borrowers defending claims — the perspective of one side sharpening our work on the other."]},
+          {h:"Contract enforcement", paras:["We have built a distinguished practice in suits for specific performance, damages for breach, mortgage suits and the rendition of accounts — the bread and butter of commercial dispute work, and the area in which careful pleading and discovery most often decides the case.","We are particularly experienced in disputes arising out of supply, distribution and dealership agreements, shareholder and joint venture agreements, construction and EPC contracts, and inter-corporate financial arrangements."]}
+        ]},
+      { slug:"arbitration", num:"02", title:"Commercial Arbitration",
+        card:"Counsel in domestic and institutional arbitrations seated in India, with the full range of court support that flanks an arbitration.",
+        lead:"We act as counsel in domestic and institutional arbitrations seated in India — and handle the court support that ensures the award the client wins is the award the client recovers.",
+        forums:["Domestic arbitrations","Institutional arbitrations","Section 9 interim relief","Section 34 challenges","Section 36 enforcement","High Court appellate work"],
+        sections:[
+          {h:"Counsel across sectors", paras:["Our arbitration work spans construction and infrastructure claims, the FMCG sector, and contractual damages. We bring the same recovery-first discipline to arbitration that governs our court practice."]},
+          {h:"Court support that flanks the award", paras:["We handle the full range of court support work that surrounds an arbitration — from interim protection at the outset to resisting or pursuing set-aside challenges and enforcement — ensuring that the award the client wins is the award the client recovers."]}
+        ]},
+      { slug:"constitutional-tax", num:"03", title:"Constitutional & Taxation",
+        card:"A sustained appellate record across GST, customs and legacy levies, and writ proceedings under Articles 32, 226 and 227.",
+        lead:"A constitutional and taxation practice combining a sustained appellate record with the day-to-day craft of statutory interpretation, assessment-stage litigation and advisory work.",
+        forums:["Supreme Court of India","High Courts (Art. 32/226/227)","GST Appellate Tribunals","Adjudicating & Appellate Authorities","Customs, Excise & Service Tax","State levies & cesses"],
+        sections:[
+          {h:"The full life of an indirect-tax matter", paras:["Our work spans the full life of a matter — from response to summons, statement recording and search proceedings, through adjudication, the Appellate Authorities and Tribunals, and on to the High Courts and the Supreme Court.","We act in disputes under the GST regime, the Customs Act, the legacy Central Excise and Service Tax statutes, and surviving State levies including VAT, Entry Tax, Electricity Duty, Motor Vehicle Taxation, Luxury Tax and Entertainment Tax."]},
+          {h:"Within the GST regime", paras:["We regularly handle classification and valuation challenges, denial of input tax credit, refund litigation, transitional credit claims, anti-evasion and search-and-seizure proceedings, and writ challenges to arrest and provisional attachment under Section 83 of the CGST Act."]},
+          {h:"Constitutional litigation", paras:["We appear in writ proceedings under Articles 32, 226 and 227 — challenges to executive action, public-law disputes arising out of regulatory levies and licensing decisions, the constitutional dimensions of corporate transactions, and Article 14 challenges to discriminatory administrative measures. We also advise boards and promoter groups on constitutional risk."]}
+        ]},
+      { slug:"real-estate", num:"04", title:"Real Estate",
+        card:"A 360° perspective — developer-side and home-buyer-side — across RERA, NCDRC, the NCLT and the constitutional courts.",
+        lead:"Our unique positioning — with simultaneous experience on the developer side and the home-buyer side — gives us a 360-degree perspective on every dispute.",
+        forums:["Supreme Court & High Courts","NCDRC & State Commissions","RERA authorities & tribunals","NCLT & NCLAT","Competition Commission of India","Allied criminal courts"],
+        sections:[
+          {h:"Both sides of the table", paras:["We appear before the Supreme Court, High Courts, the NCDRC and State Consumer Commissions, RERA authorities and appellate tribunals, the NCLT and NCLAT, and criminal courts where allied proceedings arise. Acting for both developers and buyers gives us an uncommon ability to sequence remedies across statutes."]},
+          {h:"Landmark matters", paras:["The firm has acted in some of the largest real estate disputes in the country, including the DLF matter before the CCI (penalty of ₹630 crores), the Raheja Developers refund matter before the NCDRC (above ₹80 crores), and the Kolkata West International matter (claim above ₹90 crores).","We have represented home-buyer associations of over 850 and 1,600 members in landmark proceedings — including the matter that established home buyers as financial creditors under the IBC."]}
+        ]},
+      { slug:"insolvency", num:"05", title:"Insolvency & Bankruptcy",
+        card:"Fully integrated IBC services from pre-CIRP positioning to resolution plan negotiation, avoidance applications and liquidation.",
+        lead:"We advise and represent every stakeholder in the insolvency process before the NCLT and NCLAT under the Insolvency and Bankruptcy Code, 2016.",
+        forums:["NCLT & NCLAT","Resolution professionals & liquidators","Committees of creditors","Financial & operational creditors","Home-buyer representatives","Personal guarantors"],
+        sections:[
+          {h:"Across the table", paras:["We act for resolution professionals, liquidators, committees of creditors, financial creditors, operational creditors, home-buyer authorised representatives and personal guarantors."]},
+          {h:"Integrated insolvency services", paras:["Through Mr. Sushil Kumar Singhal, a registered Insolvency Professional with the IBBI, the firm offers fully integrated services — from pre-CIRP positioning to resolution plan negotiation, avoidance applications and liquidation.","Our IBC team is supported by the firm's commercial litigation bench, which positions us well for the contested and high-value end of the practice."]}
+        ]},
+      { slug:"banking-finance", num:"06", title:"Banking & Finance",
+        card:"Predominantly borrower-side: debt restructuring, one-time settlements, SARFAESI defence, and DRT / DRAT proceedings.",
+        lead:"On the financing side, our work is predominantly borrower-side — advising corporate borrowers, promoters and personal guarantors at the interface of security enforcement and the IBC.",
+        forums:["DRT & DRAT","SARFAESI defence","RBI Prudential Framework","One-time settlements","High Court writ challenges","Master Directions on Frauds"],
+        sections:[
+          {h:"Borrower-side strategy", paras:["We advise on debt restructuring, one-time settlements, SARFAESI defence, DRT and DRAT proceedings, restructuring under the RBI's Prudential Framework, and the strategic interface between security enforcement and the IBC."]},
+          {h:"Promoter protection", paras:["We act for promoters in promoter-classification disputes, fraud classification challenges under the Master Directions on Frauds, and writ challenges before the High Courts arising out of recovery actions."]}
+        ]},
+      { slug:"private-client", num:"07", title:"Private Client Practice",
+        card:"For promoter families and HNIs — family settlements, succession planning, private trusts, and matrimonial disputes handled with discretion.",
+        lead:"Our private client practice serves promoter families, industrialists and high-net-worth individuals on matters at the intersection of family, succession and commerce.",
+        forums:["Family settlements & partition","Wills, probate & administration","Private trusts & succession","Matrimonial & custody (HNI)","Private property disputes"],
+        sections:[
+          {h:"Family, succession and commerce", paras:["Our work includes family settlements and partition arrangements; will drafting, probate and letters of administration; private trust structures and succession planning; matrimonial and custody disputes for HNI clients; and private property disputes distinct from our institutional real estate practice."]},
+          {h:"Litigation muscle, added discretion", paras:["We bring the same litigation muscle to these matters that we bring to our commercial work — with the added discretion and sensitivity these matters demand."]}
+        ]},
+      { slug:"white-collar", num:"08", title:"White Collar & Economic Offences",
+        card:"Representation before the ED, SFIO, EOW, MCA and CBI, including PMLA proceedings and allied criminal litigation.",
+        lead:"We represent corporates, directors, promoters and professionals before the enforcement agencies — and treat allied criminal proceedings as an integrated part of the commercial brief.",
+        forums:["Enforcement Directorate (PMLA)","Serious Fraud Investigation Office","Economic Offences Wing","Ministry of Corporate Affairs","CBI","PMLA Appellate Tribunal"],
+        sections:[
+          {h:"Enforcement proceedings", paras:["Our work spans PMLA proceedings, summons and interrogation strategy, search and seizure, bail and anticipatory bail, look-out circulars, attachment of properties, and adjudication and appellate proceedings before the Appellate Tribunal under PMLA."]},
+          {h:"Allied criminal litigation", paras:["Commercial disputes frequently spawn allied criminal proceedings and complaints before the Economic Offences Wing. We handle these as an integrated part of the commercial brief, ensuring the criminal docket is used or defended in service of the client's overall commercial objective."]}
+        ]}
+    ];
+  }
+  renderVals() {
+    const all = this.areasData();
+    const areas = all.map(a => ({ num:a.num, title:a.title, card:a.card, href:"Practice.dc.html?area="+a.slug }));
+    let slug = "";
+    try { slug = new URLSearchParams(location.search).get("area") || ""; } catch(e) {}
+    const idx = all.findIndex(a => a.slug === slug);
+    if (idx === -1) return { isOverview: true, isDetail: false, areas };
+    const a = all[idx];
+    const prev = all[(idx - 1 + all.length) % all.length];
+    const next = all[(idx + 1) % all.length];
+    return {
+      isOverview: false, isDetail: true, areas,
+      area: { ...a,
+        prevHref:"Practice.dc.html?area="+prev.slug, prevTitle:prev.title,
+        nextHref:"Practice.dc.html?area="+next.slug, nextTitle:next.title }
+    };
+  }
+}
+</script>
+</body>
+</html>

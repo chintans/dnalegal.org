@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/styles.css">
+<script src="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --edge: clamp(20px, 5vw, 72px); }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); text-wrap: pretty; }
+a { color: var(--color-accent); }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
+.rule2 { height: 2px; background: var(--color-divider); border: 0; margin: 0; }
+.ph { padding: clamp(48px,6vw,96px) 0 clamp(40px,5vw,64px); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr); gap: 32px clamp(32px,5vw,72px); align-items: end; }
+.ph__k { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 22px; }
+.ph h1 { font-size: clamp(42px,6vw,84px); line-height: 0.98; letter-spacing: -0.03em; margin: 0; }
+.ph__lead { font-size: clamp(16px,1.5vw,20px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 48ch; }
+.banner { background: var(--color-surface); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); }
+.banner .wrap { padding: 20px var(--edge); display: flex; align-items: center; gap: 14px; font-size: 13.5px; letter-spacing: 0.02em; color: color-mix(in srgb,var(--color-text) 72%,transparent); }
+.banner b { color: var(--color-accent); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; }
+.feature { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px clamp(32px,5vw,72px); align-items: center; padding: clamp(48px,6vw,80px) 0; }
+.feature__fig { aspect-ratio: 4/3; }
+.feature__fig image-slot { width: 100%; height: 100%; }
+.feature__tag { display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-bg); background: var(--color-accent); padding: 6px 12px; margin-bottom: 20px; }
+.feature h2 { font-size: clamp(26px,3vw,40px); line-height: 1.06; letter-spacing: -0.02em; margin: 0 0 16px; }
+.feature p { font-size: 16px; line-height: 1.66; margin: 0 0 20px; color: color-mix(in srgb,var(--color-text) 80%,transparent); max-width: 52ch; }
+.feature small { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 55%,transparent); }
+.list { display: grid; grid-template-columns: 1fr 1fr 1fr; border-top: 2px solid var(--color-divider); border-left: 2px solid var(--color-divider); }
+.art { border-right: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); padding: 34px clamp(24px,2.4vw,36px); display: flex; flex-direction: column; min-height: 260px; }
+.art__meta { display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 55%,transparent); margin-bottom: 20px; }
+.art__meta b { color: var(--color-accent-700); font-weight: 400; }
+.art h3 { font-size: 20px; line-height: 1.18; letter-spacing: -0.01em; margin: 0 0 12px; }
+.art p { font-size: 14px; line-height: 1.55; margin: 0; color: color-mix(in srgb,var(--color-text) 72%,transparent); }
+.art small { margin-top: auto; padding-top: 20px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 50%,transparent); }
+.sub { display: grid; grid-template-columns: 1fr 1fr; gap: 40px clamp(32px,5vw,72px); align-items: center; padding: clamp(48px,6vw,80px) 0 clamp(56px,7vw,96px); }
+.sub h2 { font-size: clamp(24px,2.6vw,34px); letter-spacing: -0.02em; margin: 0 0 12px; }
+.sub p { font-size: 15px; line-height: 1.6; margin: 0; color: color-mix(in srgb,var(--color-text) 76%,transparent); max-width: 44ch; }
+.sub__form { display: flex; gap: 12px; align-items: flex-end; }
+.sub__form .field { flex: 1; }
+@media (max-width: 820px) { .ph, .feature, .sub { grid-template-columns: 1fr; align-items: start; } .feature__fig { order:-1; aspect-ratio: 16/9; } .list { grid-template-columns: 1fr; } }
+</style>
+</helmet>
+<dc-import name="SiteNav" active="insights" hint-size="100%,84px"></dc-import>
+<hr class="rule2">
+<div class="wrap">
+  <header class="ph">
+    <div>
+      <p class="ph__k">Insights</p>
+      <h1>Notes from the courtroom.</h1>
+    </div>
+    <p class="ph__lead">Analysis on commercial disputes, recovery, insolvency, taxation and the regulatory landscape — written by the partners who argue these matters.</p>
+  </header>
+</div>
+<div class="banner"><div class="wrap"><b>Coming soon</b><span>Our insights library is being prepared. The pieces below are placeholders for the firm's forthcoming commentary.</span></div></div>
+<div class="wrap">
+  <article class="feature">
+    <div>
+      <span class="feature__tag">Featured · Insolvency</span>
+      <h2>Home buyers as financial creditors: five years on.</h2>
+      <p>A practitioner's review of how the landmark recognition of home buyers under the IBC has reshaped real-estate CIRPs — and what allottee representatives should expect at the committee of creditors.</p>
+      <small>Draft · By the Insolvency &amp; Real Estate practice</small>
+    </div>
+    <figure class="feature__fig grayscale"><image-slot id="ins-feature" shape="rect" placeholder="Article image"></image-slot></figure>
+  </article>
+</div>
+<hr class="rule2">
+<div class="wrap" style="padding-top:clamp(40px,5vw,64px);">
+  <div class="list">
+    <article class="art"><div class="art__meta"><b>Recovery</b><span>Commercial Courts</span></div><h3>Summary suits under Order XXXVII: sequencing recovery from day one</h3><p>Why forum selection and interim relief decide the outcome before the first hearing.</p><small>Coming soon</small></article>
+    <article class="art"><div class="art__meta"><b>Taxation</b><span>GST</span></div><h3>Provisional attachment under Section 83 CGST: the writ remedy</h3><p>The contours of challenging arrest and attachment in the anti-evasion context.</p><small>Coming soon</small></article>
+    <article class="art"><div class="art__meta"><b>Banking</b><span>SARFAESI</span></div><h3>Borrower-side defence at the DRT: a practical playbook</h3><p>Restructuring, one-time settlements and the interface with the IBC.</p><small>Coming soon</small></article>
+    <article class="art"><div class="art__meta"><b>Real Estate</b><span>RERA / NCDRC</span></div><h3>Delayed possession: choosing between the consumer and RERA forums</h3><p>Sequencing remedies across statutes for the home-buyer claimant.</p><small>Coming soon</small></article>
+    <article class="art"><div class="art__meta"><b>White Collar</b><span>PMLA</span></div><h3>Summons and interrogation strategy before the Enforcement Directorate</h3><p>Protecting the commercial position while the criminal docket runs.</p><small>Coming soon</small></article>
+    <article class="art"><div class="art__meta"><b>Arbitration</b><span>Enforcement</span></div><h3>Winning the award, recovering the award: the court support that matters</h3><p>Interim protection, set-aside defence and execution as one strategy.</p><small>Coming soon</small></article>
+  </div>
+</div>
+<hr class="rule2">
+<div class="wrap">
+  <section class="sub">
+    <div>
+      <h2>Be the first to read them.</h2>
+      <p>Leave your email and we'll send our commentary as it publishes. No marketing — just the analysis.</p>
+    </div>
+    <form class="sub__form" onSubmit="{{ onSubmit }}">
+      <div class="field" style="margin:0;"><label for="ins-email">Email address</label><input class="input" id="ins-email" type="email" placeholder="you@firm.com" required></div>
+      <button class="btn btn-primary" type="submit">Notify me</button>
+    </form>
+  </section>
+</div>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { onSubmit: (e) => { e.preventDefault(); const f = e.target; f.innerHTML = '<p style="margin:0;font-size:16px;color:var(--color-accent-700);font-weight:600;">Thank you — we\'ll be in touch when we publish.</p>'; } };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/styles.css">
+<script src="_ds/modernist-b99051ef-2a97-41c7-a0ab-38a16645b3b4/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --edge: clamp(20px, 5vw, 72px); }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); text-wrap: pretty; }
+a { color: var(--color-accent); }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
+.rule2 { height: 2px; background: var(--color-divider); border: 0; margin: 0; }
+.ph { padding: clamp(48px,6vw,96px) 0 clamp(40px,5vw,64px); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr); gap: 32px clamp(32px,5vw,72px); align-items: end; }
+.ph__k { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 22px; }
+.ph h1 { font-size: clamp(42px,6vw,84px); line-height: 0.98; letter-spacing: -0.03em; margin: 0; }
+.ph__lead { font-size: clamp(16px,1.5vw,20px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 48ch; }
+.grouphead { display: flex; align-items: baseline; gap: 20px; padding: clamp(44px,5vw,72px) 0 8px; }
+.grouphead h2 { font-size: clamp(22px,2.4vw,30px); letter-spacing: -0.01em; margin: 0; }
+.grouphead span { font-family: var(--font-heading); font-weight: 800; font-size: 13px; color: var(--color-accent); }
+.person { display: grid; grid-template-columns: minmax(0,280px) minmax(0,1fr); gap: 28px clamp(32px,5vw,72px); align-items: start; padding: 40px 0; border-top: 2px solid var(--color-divider); }
+.person__fig { aspect-ratio: 4/5; position: sticky; top: 110px; }
+.person__fig image-slot { width: 100%; height: 100%; }
+.person__role { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 12px; }
+.person h3 { font-size: clamp(26px,2.8vw,36px); letter-spacing: -0.02em; margin: 0 0 12px; }
+.person__meta { font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; color: color-mix(in srgb,var(--color-text) 58%,transparent); margin: 0 0 22px; padding-bottom: 20px; border-bottom: 1px solid var(--color-divider); }
+.person__bio p { font-size: 15.5px; line-height: 1.72; margin: 0 0 16px; color: color-mix(in srgb,var(--color-text) 84%,transparent); max-width: 66ch; }
+.assoc { padding: clamp(40px,5vw,64px) 0 clamp(56px,7vw,96px); }
+.assoc__grid { display: grid; grid-template-columns: repeat(3,1fr); border-top: 2px solid var(--color-divider); border-left: 2px solid var(--color-divider); }
+.assoc__c { border-right: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); padding: 32px clamp(24px,2.4vw,36px); }
+.assoc__c h3 { font-size: 21px; letter-spacing: -0.01em; margin: 0 0 8px; }
+.assoc__c span { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-700); }
+.assoc__note { font-size: 15px; line-height: 1.66; max-width: 60ch; margin: 0 0 32px; color: color-mix(in srgb,var(--color-text) 78%,transparent); }
+@media (max-width: 760px) {
+  .ph { grid-template-columns: 1fr; align-items: start; }
+  .person { grid-template-columns: 1fr; } .person__fig { position: static; aspect-ratio: 16/10; max-width: 320px; }
+  .assoc__grid { grid-template-columns: 1fr; }
+}
+</style>
+</helmet>
+<dc-import name="SiteNav" active="team" hint-size="100%,84px"></dc-import>
+<hr class="rule2">
+<div class="wrap">
+  <header class="ph">
+    <div>
+      <p class="ph__k">The Team</p>
+      <h1>Every brief is partner-led.</h1>
+    </div>
+    <p class="ph__lead">DNA Legal combines the experience of senior partners with the agility of a new generation. Every client is paired with a senior point of contact for the duration of the engagement.</p>
+  </header>
+</div>
+<div class="wrap">
+  <div class="grouphead"><span>01</span><h2>Partners</h2></div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="p-ajay" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Founding Partner</p>
+      <h3>Ajay Aggarwal</h3>
+      <p class="person__meta">Life Member, Supreme Court Bar Association · SCBA Membership A-00348</p>
+      <div class="person__bio">
+        <p>Mr. Ajay Aggarwal is the Founder of the firm. In two decades of practice he has focused primarily on litigation and advisory work in constitutional law and taxation — with special reference to indirect taxes, both Central and State, including Central Excise, Customs, Service Tax, Sales Tax, Entry Tax, Motor Vehicle Taxation, Electricity Duty, VAT, GST and other State levies and cesses. He has also handled significant matters in direct taxation, SEBI laws, company law, securitisation, property law, contracts and arbitration.</p>
+        <p>He has briefed and instructed leading designated Senior Advocates of the Supreme Court and the High Courts — many of whom were subsequently elevated to the Bench. He has independently appeared before the Supreme Court and a majority of the High Courts in the country, and before various Tribunals, regulators and statutory authorities. His work is reflected in more than 150 reported judgments.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="p-adarsh" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Founding Partner · Head of Commercial Disputes</p>
+      <h3>Adarsh Kumar Aggarwal</h3>
+      <p class="person__meta">Delhi High Court · Punjab &amp; Haryana High Court · Quasi-judicial tribunals</p>
+      <div class="person__bio">
+        <p>Mr. Adarsh Aggarwal co-founded the firm. With over two decades of experience, his practice is centred on the Delhi High Court, the Punjab &amp; Haryana High Court and quasi-judicial tribunals. He heads the commercial disputes practice, and his areas of expertise span civil and commercial litigation with a strong emphasis on recovery suits, rendition-of-accounts cases, mortgage suits, winding-up matters and arbitration.</p>
+        <p>He also handles allied criminal matters that frequently emerge alongside civil and commercial litigation. This integrated approach allows him to provide clients with comprehensive, end-to-end representation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="p-sushil" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Partner</p>
+      <h3>Sushil Kumar Singhal</h3>
+      <p class="person__meta">IBBI Registered Insolvency Professional · NCLT/NCLAT Bar · DHCBA · SCBA</p>
+      <div class="person__bio">
+        <p>Mr. Sushil Kumar Singhal brings more than twenty-five years of experience in highway and building construction — project planning, supervision and contract management on more than twenty projects with an aggregate cost of approximately ₹6,000 crores — to a five-year insolvency practice.</p>
+        <p>As a Registered Insolvency Professional with the IBBI, he provides the full spectrum of insolvency services: liquidations, voluntary arrangements, administration, receiverships and bankruptcy. He is actively engaged in insolvency, restructuring and reorganisation proceedings under the Companies Act and the IBC, 2016, and regularly appears before the NCLT and the Delhi High Court.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="p-parveen" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Partner · Head of Criminal Litigation</p>
+      <h3>Parveen Bhati</h3>
+      <p class="person__meta">Former Additional Public Prosecutor, State of Delhi · Former Member, OBC Commission for Delhi</p>
+      <div class="person__bio">
+        <p>Mr. Parveen Bhati heads the firm's criminal litigation practice, bringing nearly three decades of courtroom experience across trial and appellate work. His practice covers the full criminal calendar, including offences under the IPC, the Negotiable Instruments Act, the Prevention of Money Laundering Act, the Prevention of Corruption Act and prosecutions under the Companies Act.</p>
+        <p>He has served as Additional Public Prosecutor for the State of Delhi — a prosecutorial experience that informs the strategy he brings to the firm's defence mandates today.</p>
+      </div>
+    </div>
+  </div>
+  <div class="grouphead"><span>02</span><h2>Principal Associates</h2></div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="pa-siddharth" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Principal Associate</p>
+      <h3>Siddharth Banthia</h3>
+      <p class="person__meta">Real Estate &amp; Insolvency Disputes</p>
+      <div class="person__bio">
+        <p>Mr. Siddharth Banthia anchors the firm's real estate and insolvency dispute practice, with over a decade of contested practice before the NCDRC, the State and District Consumer Commissions, the NCLT and NCLAT, the CCI, RERA authorities and appellate tribunals, the Punjab &amp; Haryana High Court, the Delhi High Court and the Supreme Court.</p>
+        <p>His work covers the full life cycle of a real-estate or commercial project dispute. He advises financial and operational creditors and resolution professionals, with particular focus on real-estate CIRPs, contested admission proceedings and avoidance applications. His combined exposure to the consumer, RERA and IBC forums gives him an uncommon ability to sequence remedies across statutes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="pa-vishnu" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Principal Associate</p>
+      <h3>Vishnu Kant</h3>
+      <p class="person__meta">Advocate-on-Record, Supreme Court of India</p>
+      <div class="person__bio">
+        <p>Mr. Vishnu Kant is an Advocate-on-Record at the Supreme Court and conducts the firm's filings and proceedings before the Court. His practice spans the full range of original and appellate work — Article 32 writ petitions, Article 136 special leave petitions, transfer petitions, and review and curative petitions — across the firm's commercial, real estate, insolvency, taxation and criminal mandates.</p>
+        <p>He works closely with the firm's partners and arguing counsel on the strategic positioning of matters and is responsible for the conduct of the firm's Supreme Court docket.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="pa-abhishek" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Principal Associate</p>
+      <h3>Abhishek Dagar</h3>
+      <p class="person__meta">Commercial Disputes · Real Estate · Taxation</p>
+      <div class="person__bio">
+        <p>Mr. Abhishek Dagar anchors the firm's commercial disputes, real estate and taxation practice. His commercial work covers recovery proceedings and summary suits before the Commercial Courts, proceedings under the Negotiable Instruments Act, and contractual disputes arising out of inter-corporate dealings.</p>
+        <p>On the real estate side, he represents clients before the NCDRC, the State Consumer Commissions, RERA authorities and the civil courts in disputes concerning refunds, delayed possession and project deficiencies. His work also covers indirect tax litigation under the GST regime, the Customs Act and the legacy statutes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="pa-mukul" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Principal Associate</p>
+      <h3>Mukul Singhla</h3>
+      <p class="person__meta">Commercial Suits · Recovery · Arbitration</p>
+      <div class="person__bio">
+        <p>Mr. Mukul Singhla's practice focuses on commercial suits before the Commercial Courts and the Punjab &amp; Haryana High Court, recovery proceedings before the Debt Recovery Tribunal, contractual disputes, arbitration and shareholder litigation.</p>
+        <p>He works closely with the firm's lending and corporate clients on the strategic structuring of recovery actions, security enforcement and settlement architecture. He is recognised within the firm for the quality of his drafting and is often the principal author of the firm's pleadings in high-value commercial matters.</p>
+      </div>
+    </div>
+  </div>
+  <div class="person">
+    <figure class="person__fig grayscale"><image-slot id="pa-sandeep" shape="rect" placeholder="Portrait"></image-slot></figure>
+    <div>
+      <p class="person__role">Project, Construction &amp; Contract Management</p>
+      <h3>Sandeep Sharma</h3>
+      <p class="person__meta">Techno-Commercial Advisory</p>
+      <div class="person__bio">
+        <p>Mr. Sharma brings extensive cross-disciplinary experience in the planning, monitoring and execution of construction and infrastructure projects across India and abroad.</p>
+        <p>He works with the firm's lawyers on the techno-commercial aspects of construction and EPC disputes, including the preparation of project schedules, cost estimates, claims documentation and contract analysis.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap assoc">
+  <div class="grouphead" style="padding-top:0;"><span>03</span><h2>Associates</h2></div>
+  <p class="assoc__note">The firm's associates support partner-led mandates across litigation and advisory work — with a focus on drafting, research, hearings before Tribunals and District Courts, and client communications.</p>
+  <div class="assoc__grid">
+    <div class="assoc__c"><h3>Rajnandini Dutta</h3><span>Associate</span></div>
+    <div class="assoc__c"><h3>Sarthak Singh</h3><span>Associate</span></div>
+    <div class="assoc__c"><h3>Shikha Bharti</h3><span>Associate</span></div>
+  </div>
+</div>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,66 @@
+---
+import AltLayout from '../../layouts/AltLayout.astro';
+---
+
+<AltLayout title="Clients" activeNav="clients">
+  <hr class="rule2">
+  <div class="wrap">
+    <header class="ph">
+      <div>
+        <p class="ph__k">Client Community</p>
+        <h1>Trusted across the growth story.</h1>
+      </div>
+      <p class="ph__lead">The firm and its lawyers have acted for a representative cross-section of Indian and multinational businesses, public sector undertakings, banks, financial institutions and individuals.</p>
+    </header>
+  </div>
+  <div class="wrap">
+    <div class="cat">
+      <div class="cat__label"><span>01</span><h2>Public Sector &amp; Government</h2></div>
+      <div class="names">
+        <span class="name">Steel Authority of India</span><span class="name">Tata Iron and Steel Co.</span><span class="name">Life Insurance Corporation of India</span><span class="name">Haryana Tourism Corporation</span><span class="name">Rashtriya Ispat Nigam</span>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat__label"><span>02</span><h2>Banking &amp; Finance</h2></div>
+      <div class="names">
+        <span class="name">Jammu and Kashmir Bank</span><span class="name">Indian Overseas Bank</span><span class="name">LIC Housing Finance</span>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat__label"><span>03</span><h2>Real Estate &amp; Infrastructure</h2></div>
+      <div class="names">
+        <span class="name">DLF Limited</span><span class="name">Raheja Developers</span><span class="name">Dhoot Infrastructure</span><span class="name">Parsvnath Developers</span><span class="name">M3M Group</span><span class="name">Kolkata West International City</span>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat__label"><span>04</span><h2>FMCG, Manufacturing &amp; Industry</h2></div>
+      <div class="names">
+        <span class="name">Nestlé</span><span class="name">Tata Motors</span><span class="name">United Phosphorus</span><span class="name">ITC</span><span class="name">Coca-Cola India</span><span class="name">Hindustan Coca-Cola Beverages</span><span class="name">Hindustan Unilever</span><span class="name">Parle Agro</span><span class="name">Colgate</span><span class="name">MRF</span><span class="name">Ashok Leyland</span><span class="name">KEC International</span><span class="name">Orient Fans</span><span class="name">Sanden Vikas</span><span class="name">Sukhjit Starch and Chemicals</span>
+      </div>
+    </div>
+    <div class="cat">
+      <div class="cat__label"><span>05</span><h2>Other Corporates</h2></div>
+      <div class="names">
+        <span class="name">Gem International</span><span class="name">SPL Limited</span><span class="name">High Polymers</span><span class="name">Frick India</span><span class="name">General Engineering Works</span><span class="name">Melco India</span><span class="name">Delkon Textiles</span><span class="name">Coir Foam India</span><span class="name">Modern Transformers</span><span class="name">ABC Transformers</span><span class="name">Bharat Insulation Co.</span><span class="name">Hindusthan Vidyut Products</span><span class="name">Ubique Electricals</span><span class="name">Doaba Milk Plant</span><span class="name">Alpine Apparels</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="disc">The above is a non-exhaustive list of past and present clients of the firm and its lawyers. Client names are published for the purpose of describing the firm's experience and do not imply any ongoing engagement or endorsement. Nothing on this page is intended as solicitation or advertisement.</p>
+  </div>
+</AltLayout>
+
+<style>
+  .ph { padding: clamp(48px,6vw,96px) 0 clamp(40px,5vw,64px); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr); gap: 32px clamp(32px,5vw,72px); align-items: end; }
+  .ph__k { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 22px; }
+  .ph h1 { font-size: clamp(42px,6vw,84px); line-height: 0.98; letter-spacing: -0.03em; margin: 0; }
+  .ph__lead { font-size: clamp(16px,1.5vw,20px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 50ch; }
+  .cat { display: grid; grid-template-columns: minmax(0,280px) minmax(0,1fr); gap: 24px clamp(32px,5vw,72px); align-items: start; padding: 40px 0; border-top: 2px solid var(--color-divider); }
+  .cat__label { position: sticky; top: 110px; }
+  .cat__label h2 { font-size: clamp(20px,2.2vw,26px); letter-spacing: -0.01em; margin: 0; }
+  .cat__label span { display: block; font-family: var(--font-heading); font-weight: 800; font-size: 13px; color: var(--color-accent); margin-bottom: 12px; }
+  .names { display: flex; flex-wrap: wrap; gap: 10px; }
+  .name { font-size: 14.5px; letter-spacing: 0.01em; padding: 10px 16px; border: 1px solid var(--color-divider); color: color-mix(in srgb,var(--color-text) 88%,transparent); background: var(--color-surface); }
+  .disc { padding: clamp(40px,5vw,64px) 0 clamp(56px,7vw,96px); font-size: 13px; line-height: 1.7; color: color-mix(in srgb,var(--color-text) 58%,transparent); border-top: 2px solid var(--color-divider); max-width: 70ch; }
+  @media (max-width: 760px) { .ph { grid-template-columns: 1fr; align-items: start; } .cat { grid-template-columns: 1fr; } .cat__label { position: static; } }
+</style>

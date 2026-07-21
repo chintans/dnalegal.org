@@ -1,0 +1,98 @@
+---
+import AltLayout from '../../layouts/AltLayout.astro';
+---
+
+<AltLayout title="The Firm" activeNav="about">
+  <hr class="rule2">
+  <div class="wrap">
+    <header class="ph">
+      <div>
+        <p class="ph__k">The Firm</p>
+        <h1>We are different by design.</h1>
+      </div>
+      <p class="ph__lead">DNA Legal is the modern manifestation of a timeless commitment to legal excellence — pairing deep-rooted heritage with a technology-driven practice.</p>
+    </header>
+  </div>
+  <hr class="rule2">
+  <div class="wrap">
+    <section class="section story">
+      <h2>Our story</h2>
+      <div class="story__body">
+        <p>Our story did not begin today. It began decades ago at 3 Parliament Street, New Delhi, within the walls of one of India's pioneer law firms — J. B. Dadachanji &amp; Company. This was a firm that did not merely practise law; it helped shape it, offering a uniquely holistic approach to clients navigating a newly-independent, dynamic India.</p>
+        <p>Led by the legendary Mr. J. B. Dadachanji, Mr. Ravinder Narain and Mr. O. C. Mathur, the firm became a benchmark for excellence in the Indian legal profession. That legacy of benchmark-setting is our inheritance.</p>
+        <p>After the demise of his partners, Mr. Ravinder Narain carried the torch forward under the name and style of "Ravinder Narain &amp; Company." Today, the mantle has passed to his senior associates, who founded DNA Legal to carry this profound legacy into a new era.</p>
+        <div class="pull">
+          <p>"The life of the law has not been logic; it has been experience."</p>
+          <span>— Oliver Wendell Holmes Jr.</span>
+        </div>
+        <p>At DNA Legal, our philosophy is straightforward: our client's interests are our own. We deliver clarity in complexity, transforming intricate legal challenges into strategic advantages. We believe in quality over quantity — ensuring every client receives the personal, partner-led attention their matter deserves.</p>
+        <p>We see ourselves not merely as legal advisors, but as trusted partners in the Indian growth story, dedicated to ensuring our clients thrive within it.</p>
+      </div>
+    </section>
+  </div>
+  <div class="wrap"><figure class="figfull grayscale"><image-slot id="about-wide" shape="rect" placeholder="Firm / heritage photograph"></image-slot></figure></div>
+  <div class="wrap">
+    <section class="section">
+      <div class="prac-head">
+        <p class="k">How we practise</p>
+        <h2>A team of seasoned advocates with a Pan-India presence.</h2>
+      </div>
+      <div class="how">
+        <div class="how__c"><span class="how__n">01 · HERITAGE</span><h3>Heritage, carried forward</h3><p>We inherit a tradition of benchmark-setting advocacy. That inheritance is a discipline of preparation, persuasion and accountability that shapes every brief we accept.</p></div>
+        <div class="how__c"><span class="how__n">02 · ATTENTION</span><h3>Partner-led, personal attention</h3><p>Every matter is led by a partner or principal associate. There are no handovers to junior counsel after the pitch — clients deal with the lawyer who knows their file.</p></div>
+        <div class="how__c"><span class="how__n">03 · COMMERCE</span><h3>Commercial sensibility</h3><p>We are litigators, but we think like a board. Our advice is calibrated to commercial reality: cost of recovery, time value of money, reputational exposure.</p></div>
+        <div class="how__c"><span class="how__n">04 · REACH</span><h3>Pan-India reach</h3><p>Through our New Delhi office, our Supreme Court chambers and a vetted network of associate counsel, we serve clients in every commercial jurisdiction in the country.</p></div>
+      </div>
+    </section>
+  </div>
+  <section class="values">
+    <div class="wrap">
+      <h2>Why clients choose DNA Legal.</h2>
+      <div class="values__g">
+        <div class="val"><h3>Heritage that translates into instinct.</h3><p>Decades of institutional memory inform the way we read a brief, anticipate the other side and structure a strategy.</p></div>
+        <div class="val"><h3>Single point of accountability.</h3><p>Wherever the dispute is, the firm appears — with a single partner answerable for the brief from filing to satisfaction.</p></div>
+        <div class="val"><h3>Commercial sensibility, by design.</h3><p>We tell clients when not to litigate, just as readily as when to. The result is a working relationship that pays for itself.</p></div>
+      </div>
+    </div>
+  </section>
+</AltLayout>
+
+<style>
+  .ph { padding: clamp(48px,6vw,96px) 0 clamp(40px,5vw,64px); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr); gap: 32px clamp(32px,5vw,72px); align-items: end; }
+  .ph__k { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 22px; }
+  .ph h1 { font-size: clamp(42px,6vw,84px); line-height: 0.98; letter-spacing: -0.03em; margin: 0; }
+  .ph__lead { font-size: clamp(16px,1.5vw,20px); line-height: 1.6; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 46ch; }
+  .section { padding: clamp(56px,7vw,96px) 0; }
+  .story { display: grid; grid-template-columns: minmax(0,340px) minmax(0,1fr); gap: 32px clamp(32px,5vw,80px); align-items: start; }
+  .story h2 { font-size: clamp(26px,3vw,38px); letter-spacing: -0.02em; margin: 0; position: sticky; top: 110px; }
+  .story__body p { font-size: 16.5px; line-height: 1.72; margin: 0 0 22px; color: color-mix(in srgb, var(--color-text) 84%, transparent); max-width: 62ch; }
+  .story__body p:first-child::first-letter { font-family: var(--font-heading); font-weight: 800; font-size: 4.4em; line-height: 0.8; float: left; margin: 6px 14px 0 0; color: var(--color-accent); }
+  .pull { border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider); margin: 8px 0 30px; padding: 30px 0; }
+  .pull p { font-family: var(--font-heading); font-weight: 800; font-size: clamp(22px,2.4vw,32px); line-height: 1.2; letter-spacing: -0.015em; margin: 0; }
+  .pull span { display: block; font-family: var(--font-body); font-weight: 400; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 18px; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+  .figfull { aspect-ratio: 21/9; }
+  .figfull image-slot { width: 100%; height: 100%; }
+  .prac-head { margin-bottom: 48px; }
+  .prac-head .k { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 16px; }
+  .prac-head h2 { font-size: clamp(28px,3.4vw,44px); letter-spacing: -0.02em; margin: 0; max-width: 22ch; }
+  .how { display: grid; grid-template-columns: 1fr 1fr; }
+  .how__c { padding: 40px clamp(28px,3vw,48px) 40px 0; border-top: 2px solid var(--color-divider); }
+  .how__c:nth-child(odd) { border-right: 2px solid var(--color-divider); padding-right: clamp(28px,3vw,48px); }
+  .how__c:nth-child(even) { padding-left: clamp(28px,3vw,48px); }
+  .how__n { font-family: var(--font-heading); font-weight: 800; font-size: 13px; color: var(--color-accent); letter-spacing: 0.1em; }
+  .how__c h3 { font-size: 23px; letter-spacing: -0.01em; margin: 14px 0 12px; }
+  .how__c p { font-size: 15px; line-height: 1.66; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent); }
+  .values { background: var(--color-text); color: var(--color-bg); }
+  .values .wrap { padding: clamp(56px,7vw,96px) var(--edge); }
+  .values h2 { color: var(--color-bg); font-size: clamp(26px,3vw,40px); letter-spacing: -0.02em; margin: 0 0 44px; max-width: 20ch; }
+  .values__g { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: color-mix(in srgb,#fff 18%,transparent); border: 1px solid color-mix(in srgb,#fff 18%,transparent); }
+  .val { background: var(--color-text); padding: 34px 30px; }
+  .val h3 { color: var(--color-accent-400); font-size: 20px; letter-spacing: -0.01em; margin: 0 0 14px; }
+  .val p { font-size: 14.5px; line-height: 1.6; margin: 0; color: color-mix(in srgb,#fff 80%,transparent); }
+  @media (max-width: 900px) {
+    .ph { grid-template-columns: 1fr; align-items: start; }
+    .story { grid-template-columns: 1fr; } .story h2 { position: static; }
+    .how { grid-template-columns: 1fr; } .how__c:nth-child(odd) { border-right: 0; padding-right: 0; } .how__c:nth-child(even) { padding-left: 0; }
+    .values__g { grid-template-columns: 1fr; }
+  }
+</style>

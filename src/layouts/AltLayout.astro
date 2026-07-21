@@ -1,0 +1,39 @@
+---
+import '../styles/modernist.css';
+import AltSiteNav from '../components/AltSiteNav.astro';
+import AltSiteFooter from '../components/AltSiteFooter.astro';
+
+interface Props {
+  title: string;
+  activeNav?: string;
+  showCta?: boolean;
+}
+
+const { title, activeNav, showCta = true } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title} | DNA Legal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style is:global>
+    :root { --edge: clamp(20px, 5vw, 72px); }
+    body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); text-wrap: pretty; }
+    a { color: var(--color-accent); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
+    .rule2 { height: 2px; background: var(--color-divider); border: 0; margin: 0; }
+  </style>
+</head>
+<body>
+  <AltSiteNav active={activeNav} />
+  <hr class="rule2">
+  <slot />
+  <AltSiteFooter cta={showCta} />
+
+  <script>
+    import '../scripts/image-slot.js';
+  </script>
+</body>
+</html>

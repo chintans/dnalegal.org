@@ -1,0 +1,77 @@
+---
+interface Props {
+  cta?: boolean;
+}
+const { cta = true } = Astro.props;
+---
+<footer class="site-foot">
+  {cta && (
+    <div class="site-foot__cta">
+      <div class="site-foot__cta-in">
+        <div>
+          <h2>Trusted counsel. Decisive results.</h2>
+          <p>Speak to a partner who will stay with your matter from the first conference to the final hearing.</p>
+        </div>
+        <div>
+          <a class="btn btn-ghost" href="/altA/contact" style="font-size:15px;">Contact the firm →</a>
+        </div>
+      </div>
+    </div>
+  )}
+  <div class="site-foot__main">
+    <div class="site-foot__col site-foot__brand">
+      <span class="site-nav__mark">DNA<b>.</b>LEGAL</span>
+      <p class="site-foot__tagline">Advocates &amp; Solicitors. A modern practice carrying forward the legacy of J. B. Dadachanji &amp; Company.</p>
+    </div>
+    <div class="site-foot__col">
+      <h4>Navigate</h4>
+      <a href="/altA/about">The Firm</a>
+      <a href="/altA/practice">Practice Areas</a>
+      <a href="/altA/team">Our Team</a>
+      <a href="/altA/clients">Clients</a>
+      <a href="/altA/insights">Insights</a>
+    </div>
+    <div class="site-foot__col">
+      <h4>Practice</h4>
+      <a href="/altA/practice?area=commercial-disputes">Commercial Disputes</a>
+      <a href="/altA/practice?area=insolvency">Insolvency &amp; Bankruptcy</a>
+      <a href="/altA/practice?area=real-estate">Real Estate</a>
+      <a href="/altA/practice?area=constitutional-tax">Constitutional &amp; Tax</a>
+      <a href="/altA/practice?area=white-collar">White Collar</a>
+    </div>
+    <div class="site-foot__col">
+      <h4>Principal Office</h4>
+      <p>4A, Mathura Road, Jangpura-A,<br>New Delhi – 110014, India</p>
+      <p style="margin-top:12px;">+91 11 3556 9976</p>
+      <a href="/altA/contact" style="color:var(--color-accent);margin-top:4px;">Get directions →</a>
+    </div>
+  </div>
+  <div class="site-foot__bar">
+    <div class="site-foot__bar-in">
+      <span>© 2026 DNA Legal, Advocates &amp; Solicitors. All rights reserved.</span>
+      <span>New Delhi · Supreme Court of India · Pan-India Network</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  :root { --edge: clamp(20px, 5vw, 72px); }
+  .site-foot { font-family: var(--font-body); color: var(--color-text); }
+  .site-foot__cta { background: var(--color-accent); color: var(--color-bg); }
+  .site-foot__cta-in { max-width: 1200px; margin: 0 auto; padding: clamp(48px,7vw,88px) var(--edge); display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px 64px; align-items: end; }
+  .site-foot__cta h2 { color: var(--color-bg); font-size: clamp(30px,4vw,52px); line-height: 1.04; letter-spacing: -0.02em; margin: 0; }
+  .site-foot__cta p { font-size: 16px; line-height: 1.6; margin: 20px 0 0; max-width: 42ch; color: color-mix(in srgb, #fff 88%, transparent); }
+  .site-foot__cta .btn-ghost { color: var(--color-bg); border: 1px solid var(--color-bg); }
+  .site-foot__cta .btn-ghost:hover { background: color-mix(in srgb, #fff 14%, transparent); }
+  .site-foot__main { max-width: 1200px; margin: 0 auto; padding: clamp(44px,6vw,72px) var(--edge); display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; }
+  .site-foot__col h4 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 55%, transparent); margin: 0 0 16px; }
+  .site-foot__col a, .site-foot__col p { display: block; font-size: 14px; line-height: 1.7; text-decoration: none; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 0 0 6px; }
+  .site-foot__col a:hover { color: var(--color-accent); }
+  .site-foot__brand .site-nav__mark { font-family: var(--font-heading); font-weight: 800; font-size: 24px; letter-spacing: -0.01em; color: var(--color-text); }
+  .site-foot__brand .site-nav__mark b { color: var(--color-accent); }
+  .site-foot__tagline { font-size: 14px; line-height: 1.65; margin: 16px 0 0; max-width: 34ch; color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+  .site-foot__bar { border-top: 2px solid var(--color-divider); }
+  .site-foot__bar-in { max-width: 1200px; margin: 0 auto; padding: 22px var(--edge); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12px; color: color-mix(in srgb, var(--color-text) 58%, transparent); }
+  @media (max-width: 820px) { .site-foot__cta-in { grid-template-columns: 1fr; } .site-foot__main { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .site-foot__main { grid-template-columns: 1fr; } }
+</style>
