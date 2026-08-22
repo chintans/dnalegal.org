@@ -1,0 +1,146 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InsightCard from '../../components/InsightCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import {
+  formatDate,
+  isoDate,
+  pageUrl,
+  postsForPage,
+  readingTime,
+  sortPosts,
+  tagIndex,
+  tagUrl,
+  totalPages,
+  urlFor,
+} from '../../lib/insights';
+
+const all = sortPosts(await getCollection('insights'));
+const pages = totalPages(all.length);
+const onThisPage = postsForPage(all, 1);
+const [lead, ...rest] = onThisPage;
+
+// Every topic is listed for navigation; thin ones are noindexed on their own
+// page and kept out of the sitemap rather than hidden here.
+const topics = [...tagIndex(all).values()]
+  .sort((a, b) => b.posts.length - a.posts.length || a.label.localeCompare(b.label))
+  .slice(0, 12);
+
+const description =
+  'Commentary and analysis from DNA Legal on commercial disputes, property litigation, arbitration and regulatory practice in India.';
+
+const listSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'DNA Legal Insights',
+  description,
+  url: new URL('/insights', Astro.site).href,
+  publisher: {
+    '@type': 'LegalService',
+    name: 'DNA Legal',
+    url: Astro.site?.href,
+  },
+  blogPost: all.map((post) => ({
+    '@type': 'BlogPosting',
+    headline: post.data.title,
+    datePublished: isoDate(post.data.datePublished),
+    url: new URL(urlFor(post), Astro.site).href,
+  })),
+};
+---
+
+<BaseLayout
+  title="Insights"
+  description={description}
+  canonical="/insights"
+  next={pages > 1 ? pageUrl(2) : undefined}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(listSchema)}
+    is:inline
+  />
+
+  <!-- Page Header -->
+  <section class="relative py-20 bg-slate-50 border-b border-slate-200">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.03),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest text-amber-600 block mb-3 font-sans">Knowledge</span>
+      <h1 class="text-4xl md:text-5xl font-serif-legal font-bold text-slate-900 tracking-wide">
+        Insights &amp; Analysis
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-600 text-sm md:text-base leading-relaxed font-sans">
+        Considered commentary on the questions our clients actually face — drawn from the firm's
+        courtroom practice across commercial, civil and property disputes.
+      </p>
+
+      {topics.length > 0 && (
+        <ul class="mt-8 flex flex-wrap justify-center gap-2 font-sans list-none p-0">
+          {topics.map((topic) => (
+            <li>
+              <a
+                href={tagUrl(topic.label)}
+                class="block text-[11px] uppercase tracking-widest text-slate-600 border border-slate-200 bg-white rounded-full px-3 py-1.5 hover:border-amber-500/60 hover:text-amber-700 transition-colors"
+              >
+                {topic.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {all.length === 0 ? (
+        <p class="text-center text-slate-500 font-sans text-sm py-16">
+          No insights have been published yet. Please check back shortly.
+        </p>
+      ) : (
+        <>
+          <!-- Lead article -->
+          <a
+            href={urlFor(lead)}
+            class="group block bg-white border border-slate-200 rounded-sm p-8 md:p-12 hover:border-amber-500/50 hover:shadow-[0_2px_24px_rgba(15,23,42,0.06)] transition-all duration-300"
+          >
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-[11px] uppercase tracking-widest">
+              <span class="text-amber-600 font-semibold">{lead.data.category}</span>
+              <span class="text-slate-300" aria-hidden="true">/</span>
+              <time datetime={isoDate(lead.data.datePublished)} class="text-slate-500">
+                {formatDate(lead.data.datePublished)}
+              </time>
+              <span class="text-slate-300" aria-hidden="true">/</span>
+              <span class="text-slate-500">{readingTime(lead)} read</span>
+            </div>
+
+            <h2 class="mt-5 text-2xl md:text-4xl font-serif-legal font-bold text-slate-900 leading-snug group-hover:text-amber-700 transition-colors duration-300 max-w-4xl">
+              {lead.data.title}
+            </h2>
+
+            <p class="mt-5 text-slate-600 text-sm md:text-base leading-relaxed font-sans max-w-3xl">
+              {lead.data.excerpt ?? lead.data.description}
+            </p>
+
+            <span class="mt-7 inline-flex items-center gap-2 text-xs font-sans font-semibold uppercase tracking-widest text-amber-600">
+              Read the analysis
+              <svg class="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </a>
+
+          {rest.length > 0 && (
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {rest.map((post) => <InsightCard post={post} />)}
+            </div>
+          )}
+
+          <Pagination current={1} total={pages} />
+        </>
+      )}
+    </div>
+  </section>
+</BaseLayout>

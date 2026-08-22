@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import InsightCard from '../../../components/InsightCard.astro';
+import Pagination from '../../../components/Pagination.astro';
+import {
+  pageUrl,
+  postsForPage,
+  sortPosts,
+  totalPages,
+  type Insight,
+} from '../../../lib/insights';
+
+/**
+ * Page 1 lives at /insights (it carries the lead article and topic list), so
+ * this route only generates pages 2..n.
+ */
+export async function getStaticPaths() {
+  const all = sortPosts(await getCollection('insights'));
+  const pages = totalPages(all.length);
+
+  return Array.from({ length: Math.max(0, pages - 1) }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: { posts: postsForPage(all, page), page, pages },
+    };
+  });
+}
+
+interface Props {
+  posts: Insight[];
+  page: number;
+  pages: number;
+}
+
+const { posts, page, pages } = Astro.props;
+
+const description = `Page ${page} of commentary and analysis from DNA Legal on commercial disputes, property litigation, arbitration and regulatory practice in India.`;
+---
+
+<BaseLayout
+  title={`Insights — Page ${page}`}
+  description={description}
+  canonical={pageUrl(page)}
+  prev={pageUrl(page - 1)}
+  next={page < pages ? pageUrl(page + 1) : undefined}
+>
+  <section class="relative py-20 bg-slate-50 border-b border-slate-200">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.03),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest text-amber-600 block mb-3 font-sans">
+        Knowledge — Page {page} of {pages}
+      </span>
+      <h1 class="text-4xl md:text-5xl font-serif-legal font-bold text-slate-900 tracking-wide">
+        Insights &amp; Analysis
+      </h1>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post) => <InsightCard post={post} />)}
+      </div>
+
+      <Pagination current={page} total={pages} />
+    </div>
+  </section>
+</BaseLayout>

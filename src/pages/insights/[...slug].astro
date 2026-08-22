@@ -1,0 +1,379 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  extractFaqs,
+  formatDate,
+  isoDate,
+  readingTime,
+  slugFor,
+  sortPosts,
+  tagUrl,
+  urlFor,
+  type Insight,
+} from '../../lib/insights';
+
+export async function getStaticPaths() {
+  const posts = sortPosts(await getCollection('insights'));
+  return posts.map((post) => ({
+    params: { slug: slugFor(post) },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: Insight;
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+const { data } = post;
+const published = data.datePublished;
+const modified = data.dateModified ?? published;
+const url = new URL(urlFor(post), Astro.site).href;
+
+const toc = headings.filter((heading) => heading.depth === 2);
+
+const related = sortPosts(await getCollection('insights'))
+  .filter((entry) => entry.id !== post.id)
+  .filter((entry) => entry.data.category === data.category || entry.data.tags.some((tag) => data.tags.includes(tag)))
+  .slice(0, 3);
+
+const faqs = data.schema.faqPage ? extractFaqs(post.body ?? '') : [];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': data.schema.type,
+  headline: data.title,
+  description: data.description,
+  inLanguage: 'en-IN',
+  datePublished: isoDate(published),
+  dateModified: isoDate(modified),
+  keywords: data.tags.join(', '),
+  articleSection: data.category,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  author: { '@type': 'Organization', name: data.author, url: Astro.site?.href },
+  publisher: {
+    '@type': 'LegalService',
+    name: 'DNA Legal',
+    url: Astro.site?.href,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '4A, Mathura Road, Jangpura-A',
+      addressLocality: 'New Delhi',
+      postalCode: '110014',
+      addressCountry: 'IN',
+    },
+  },
+  ...(data.schema.type === 'LegalArticle'
+    ? { jurisdiction: data.jurisdiction, about: { '@type': 'Legislation', name: 'Specific Relief Act, 1963' } }
+    : {}),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'Insights', item: new URL('/insights', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: data.title, item: url },
+  ],
+};
+
+const faqSchema =
+  faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
+      }
+    : null;
+
+const schemaBlocks = [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean);
+---
+
+<BaseLayout
+  title={data.title}
+  pageTitle={data.seoTitle ? `${data.seoTitle} | DNA Legal` : undefined}
+  description={data.description}
+  canonical={urlFor(post)}
+  ogType="article"
+  ogImage={data.ogImage ?? `/og/${slugFor(post)}.png`}
+>
+  <Fragment slot="head">
+    {schemaBlocks.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} is:inline />
+    ))}
+  </Fragment>
+
+  <!-- Article Header -->
+  <section class="relative pt-14 pb-12 bg-slate-50 border-b border-slate-200">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.03),rgba(255,255,255,0))]"></div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <nav aria-label="Breadcrumb" class="font-sans text-[11px] uppercase tracking-widest text-slate-500">
+        <ol class="flex flex-wrap items-center gap-2">
+          <li><a href="/" class="hover:text-amber-600 transition-colors">Home</a></li>
+          <li aria-hidden="true" class="text-slate-300">/</li>
+          <li><a href="/insights" class="hover:text-amber-600 transition-colors">Insights</a></li>
+        </ol>
+      </nav>
+
+      <span class="mt-8 block text-xs font-semibold uppercase tracking-widest text-amber-600 font-sans">
+        {data.category}
+      </span>
+
+      <h1 class="mt-3 text-3xl md:text-[2.6rem] font-serif-legal font-bold text-slate-900 leading-[1.15] tracking-wide">
+        {data.title}
+      </h1>
+
+      <p class="mt-5 text-slate-600 text-base leading-relaxed font-sans">
+        {data.excerpt ?? data.description}
+      </p>
+
+      <div class="mt-7 pt-5 border-t border-slate-200 flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-[11px] uppercase tracking-widest text-slate-500">
+        <span class="text-slate-700 font-semibold">{data.author}</span>
+        <span class="text-slate-300" aria-hidden="true">/</span>
+        <time datetime={isoDate(published)}>{formatDate(published)}</time>
+        <span class="text-slate-300" aria-hidden="true">/</span>
+        <span>{readingTime(post)} read</span>
+        {modified.valueOf() !== published.valueOf() && (
+          <>
+            <span class="text-slate-300" aria-hidden="true">/</span>
+            <span>Updated {formatDate(modified)}</span>
+          </>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <section class="py-14 md:py-16 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      {toc.length > 2 && (
+        <nav aria-label="On this page" class="mb-12 bg-white border border-slate-200 rounded-sm p-6 md:p-7">
+          <h2 class="text-[11px] font-sans font-semibold uppercase tracking-widest text-slate-900">
+            On this page
+          </h2>
+          <ol class="mt-4 space-y-2 font-sans text-sm text-slate-600 list-none">
+            {toc.map((heading) => (
+              <li>
+                <a href={`#${heading.slug}`} class="hover:text-amber-600 transition-colors">
+                  {heading.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+
+      <article class="insight-prose">
+        <Content />
+      </article>
+
+      {data.tags.length > 0 && (
+        <div class="mt-12 pt-7 border-t border-slate-200">
+          <h2 class="text-[11px] font-sans font-semibold uppercase tracking-widest text-slate-900">Topics</h2>
+          <ul class="mt-4 flex flex-wrap gap-2 font-sans list-none p-0">
+            {data.tags.map((tag) => (
+              <li>
+                <a
+                  href={tagUrl(tag)}
+                  class="block text-[11px] text-slate-600 border border-slate-200 bg-white rounded-full px-3 py-1.5 hover:border-amber-500/60 hover:text-amber-700 transition-colors"
+                >
+                  {tag}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="py-16 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-serif-legal font-bold text-slate-900">Related insights</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {related.map((entry) => (
+            <a
+              href={urlFor(entry)}
+              class="group block border border-slate-200 rounded-sm p-6 hover:border-amber-500/50 transition-all duration-300"
+            >
+              <span class="text-[10px] font-sans font-semibold uppercase tracking-widest text-amber-600">
+                {entry.data.category}
+              </span>
+              <h3 class="mt-3 text-lg font-serif-legal font-bold text-slate-900 leading-snug group-hover:text-amber-700 transition-colors">
+                {entry.data.title}
+              </h3>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Consultation CTA -->
+  <section class="py-16 bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-serif-legal font-bold text-white">
+        Facing a similar question?
+      </h2>
+      <p class="mt-4 text-sm text-slate-300 leading-relaxed font-sans">
+        Our disputes team advises on litigation of this kind before the trial courts, High Courts and
+        the Supreme Court of India.
+      </p>
+      <a
+        href="/contact"
+        class="mt-8 inline-block border border-amber-500/70 text-amber-400 hover:bg-amber-500 hover:text-slate-900 px-8 py-3.5 text-xs font-sans font-semibold uppercase tracking-widest transition-all duration-300"
+      >
+        Speak to the firm
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+  /* Typography for Markdown-rendered article bodies. Scoped by class rather
+     than by Astro's component scoping, which does not reach <Content /> HTML. */
+  .insight-prose {
+    color: #334155; /* slate-700 */
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+
+  .insight-prose > *:first-child {
+    margin-top: 0;
+  }
+
+  .insight-prose h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0f172a; /* slate-900 */
+    margin: 3rem 0 1rem;
+    scroll-margin-top: 6rem;
+  }
+
+  .insight-prose h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1e293b; /* slate-800 */
+    margin: 2.25rem 0 0.75rem;
+    scroll-margin-top: 6rem;
+  }
+
+  .insight-prose p {
+    margin: 0 0 1.35rem;
+  }
+
+  .insight-prose a {
+    color: #b45309; /* amber-700 */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .insight-prose a:hover {
+    color: #92400e; /* amber-800 */
+  }
+
+  .insight-prose strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  .insight-prose ul,
+  .insight-prose ol {
+    margin: 0 0 1.5rem;
+    padding-left: 1.35rem;
+  }
+
+  .insight-prose li {
+    margin-bottom: 0.6rem;
+    padding-left: 0.25rem;
+  }
+
+  .insight-prose li::marker {
+    color: #d97706; /* amber-600 */
+  }
+
+  .insight-prose blockquote {
+    margin: 2rem 0;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    border-left: 2px solid #d97706;
+    font-style: italic;
+    color: #475569;
+  }
+
+  .insight-prose hr {
+    margin: 3rem 0;
+    border: 0;
+    border-top: 1px solid #e2e8f0; /* slate-200 */
+  }
+
+  /* Tables scroll inside their own container rather than the page. */
+  .insight-prose table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9375rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+  }
+
+  .insight-prose thead {
+    background: #f8fafc; /* slate-50 */
+  }
+
+  .insight-prose th {
+    text-align: left;
+    font-weight: 600;
+    color: #0f172a;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+  }
+
+  .insight-prose td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: top;
+    line-height: 1.65;
+  }
+
+  .insight-prose tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .insight-prose code {
+    font-size: 0.9em;
+    background: #f1f5f9;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+  }
+
+  /* The FAQ block uses bold standalone lines as questions — tighten the gap. */
+  .insight-prose p > strong:only-child {
+    display: inline-block;
+    margin-bottom: 0.15rem;
+  }
+
+  @media (max-width: 640px) {
+    .insight-prose {
+      font-size: 1rem;
+    }
+
+    .insight-prose h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

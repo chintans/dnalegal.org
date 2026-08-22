@@ -1,0 +1,42 @@
+---
+import { pageUrl } from '../lib/insights';
+
+interface Props {
+  current: number;
+  total: number;
+}
+
+const { current, total } = Astro.props;
+
+const pages = Array.from({ length: total }, (_, i) => i + 1);
+const linkBase =
+  'inline-flex items-center justify-center min-w-10 h-10 px-3 border text-xs font-sans font-semibold uppercase tracking-widest transition-all duration-300';
+---
+
+{total > 1 && (
+  <nav aria-label="Pagination" class="mt-14 flex flex-wrap items-center justify-center gap-2">
+    {current > 1 && (
+      <a href={pageUrl(current - 1)} rel="prev" class={`${linkBase} border-slate-200 bg-white text-slate-600 hover:border-amber-500/60 hover:text-amber-700`}>
+        Previous
+      </a>
+    )}
+
+    {pages.map((page) =>
+      page === current ? (
+        <span aria-current="page" class={`${linkBase} border-amber-500 bg-amber-500 text-slate-900`}>
+          {page}
+        </span>
+      ) : (
+        <a href={pageUrl(page)} class={`${linkBase} border-slate-200 bg-white text-slate-600 hover:border-amber-500/60 hover:text-amber-700`}>
+          {page}
+        </a>
+      ),
+    )}
+
+    {current < total && (
+      <a href={pageUrl(current + 1)} rel="next" class={`${linkBase} border-slate-200 bg-white text-slate-600 hover:border-amber-500/60 hover:text-amber-700`}>
+        Next
+      </a>
+    )}
+  </nav>
+)}

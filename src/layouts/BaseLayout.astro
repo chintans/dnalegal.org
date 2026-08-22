@@ -5,9 +5,36 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  /** Replaces the whole <title>. Use when the page title is too long for SERPs. */
+  pageTitle?: string;
+  /** Site-relative path, e.g. "/insights/some-post". Defaults to the current URL. */
+  canonical?: string;
+  ogType?: 'website' | 'article';
+  /** Site-relative path to the social preview image. */
+  ogImage?: string;
+  /** Keeps the page out of search indexes while still following its links. */
+  noindex?: boolean;
+  /** Site-relative paths for paginated listings. */
+  prev?: string;
+  next?: string;
 }
 
-const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counsel. Decisive Results." } = Astro.props;
+const {
+  title,
+  description = "DNA Legal - Advocates & Solicitors. Trusted Counsel. Decisive Results.",
+  pageTitle,
+  canonical,
+  ogType = 'website',
+  ogImage = '/og/default.png',
+  noindex = false,
+  prev,
+  next,
+} = Astro.props;
+
+const documentTitle = pageTitle ?? `${title} | DNA Legal — Advocates & Solicitors`;
+const base = Astro.site ?? Astro.url;
+const canonicalUrl = new URL(canonical ?? Astro.url.pathname, base).href;
+const ogImageUrl = new URL(ogImage, base).href;
 ---
 
 <!doctype html>
@@ -19,8 +46,32 @@ const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counse
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <title>{title} | DNA Legal — Advocates & Solicitors</title>
-    
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {prev && <link rel="prev" href={new URL(prev, base).href} />}
+    {next && <link rel="next" href={new URL(next, base).href} />}
+    <title>{documentTitle}</title>
+
+    <!-- Social -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="DNA Legal" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="DNA Legal Insights" href="/insights/rss.xml" />
+
+    <!-- Page-specific head content (JSON-LD, etc.) -->
+    <slot name="head" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,6 +101,7 @@ const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counse
             <a href="/" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">Home</a>
             <a href="/about" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">Our Story</a>
             <a href="/practice-areas" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">Practice Areas</a>
+            <a href="/insights" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">Insights</a>
             <a href="/team" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">The Team</a>
             <a href="/contact" class="text-slate-650 hover:text-amber-600 py-2 border-b-2 border-transparent hover:border-amber-500/55 transition-all duration-300">Contact</a>
           </nav>
@@ -77,6 +129,7 @@ const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counse
           <a href="/" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">Home</a>
           <a href="/about" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">Our Story</a>
           <a href="/practice-areas" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">Practice Areas</a>
+          <a href="/insights" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">Insights</a>
           <a href="/team" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">The Team</a>
           <a href="/contact" class="text-slate-700 hover:bg-slate-50 hover:text-amber-600 block px-3 py-3 rounded-md transition-colors">Contact</a>
         </div>
@@ -117,6 +170,7 @@ const { title, description = "DNA Legal - Advocates & Solicitors. Trusted Counse
               <li><a href="/" class="hover:text-amber-600 transition-colors">Home</a></li>
               <li><a href="/about" class="hover:text-amber-600 transition-colors">Our Story</a></li>
               <li><a href="/practice-areas" class="hover:text-amber-600 transition-colors">Practice Areas</a></li>
+              <li><a href="/insights" class="hover:text-amber-600 transition-colors">Insights</a></li>
               <li><a href="/team" class="hover:text-amber-600 transition-colors">The Team</a></li>
               <li><a href="/contact" class="hover:text-amber-600 transition-colors">Contact Us</a></li>
             </ul>

@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import InsightCard from '../../../components/InsightCard.astro';
+import {
+  MIN_POSTS_FOR_INDEXABLE_TAG,
+  isoDate,
+  sortPosts,
+  tagIndex,
+  tagUrl,
+  urlFor,
+  type Insight,
+} from '../../../lib/insights';
+
+export async function getStaticPaths() {
+  const all = sortPosts(await getCollection('insights'));
+
+  return [...tagIndex(all).entries()].map(([slug, { label, posts }]) => ({
+    params: { tag: slug },
+    props: { label, posts },
+  }));
+}
+
+interface Props {
+  label: string;
+  posts: Insight[];
+}
+
+const { label, posts } = Astro.props;
+
+/** One article under a tag is thin content — useful to navigate, not to index. */
+const thin = posts.length < MIN_POSTS_FOR_INDEXABLE_TAG;
+
+const description = `DNA Legal commentary and analysis on ${label} — ${posts.length} ${
+  posts.length === 1 ? 'article' : 'articles'
+} from the firm's disputes practice.`;
+
+const listSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${label} — DNA Legal Insights`,
+  description,
+  url: new URL(tagUrl(label), Astro.site).href,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: posts.map((post, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: post.data.title,
+      url: new URL(urlFor(post), Astro.site).href,
+    })),
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'Insights', item: new URL('/insights', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: label, item: new URL(tagUrl(label), Astro.site).href },
+  ],
+};
+---
+
+<BaseLayout
+  title={label}
+  pageTitle={`${label} | DNA Legal Insights`}
+  description={description}
+  canonical={tagUrl(label)}
+  noindex={thin}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(listSchema)} is:inline />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} is:inline />
+  </Fragment>
+
+  <section class="relative py-20 bg-slate-50 border-b border-slate-200">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(197,168,128,0.03),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <nav aria-label="Breadcrumb" class="font-sans text-[11px] uppercase tracking-widest text-slate-500">
+        <ol class="flex flex-wrap items-center justify-center gap-2 list-none p-0">
+          <li><a href="/" class="hover:text-amber-600 transition-colors">Home</a></li>
+          <li aria-hidden="true" class="text-slate-300">/</li>
+          <li><a href="/insights" class="hover:text-amber-600 transition-colors">Insights</a></li>
+        </ol>
+      </nav>
+
+      <span class="mt-8 block text-xs font-semibold uppercase tracking-widest text-amber-600 font-sans">Topic</span>
+      <h1 class="mt-3 text-4xl md:text-5xl font-serif-legal font-bold text-slate-900 tracking-wide">
+        {label}
+      </h1>
+      <p class="mt-4 text-slate-600 text-sm font-sans">
+        {posts.length} {posts.length === 1 ? 'article' : 'articles'}
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post) => <InsightCard post={post} />)}
+      </div>
+
+      <div class="mt-14 text-center">
+        <a href="/insights" class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-600 hover:text-amber-700 transition-colors">
+          ← All insights
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
