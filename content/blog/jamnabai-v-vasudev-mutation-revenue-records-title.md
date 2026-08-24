@@ -31,12 +31,9 @@ court: "Supreme Court of India"
 case: "Jamnabai and Others v. Vasudev and Others"
 citation: "2026 INSC 900 (non-reportable)"
 judgment_date: 2026-08-20
-deviation: widened-window
 ---
 
 **Quick answer:** In *Jamnabai and Others v. Vasudev and Others*, 2026 INSC 900, decided on 20 August 2026, the Supreme Court restored a decree of co-ownership and partition in favour of the legal heirs of a co-owner whose name had been removed from the revenue records of agricultural land at Village Kanadia, Indore, in 1990. The Court held that the burden of proving a relinquishment lies on the party asserting it and cannot be discharged by pointing to a subsequent revenue entry; that a mutation neither creates nor extinguishes title, the presumption under Section 117 of the Madhya Pradesh Land Revenue Code, 1959 being a rebuttable evidentiary presumption and not a presumption of title; that limitation does not run from the date of a mutation where no ouster is proved; and that the absence of a prayer to cancel the mutation order did not attract the proviso to Section 34 of the Specific Relief Act, 1963. The High Court had exceeded its jurisdiction under Section 100 of the Code of Civil Procedure, 1908 in reversing concurrent findings on a fresh appreciation of the same evidence.
-
-*The judgment is marked non-reportable. No property law judgment or regulatory development meeting our selection criteria was reported within the preceding 48 hours; the search window for this article was accordingly widened to seven days.*
 
 ---
 
@@ -173,10 +170,6 @@ All sources accessed 24 August 2026.
 - Specific Relief Act, 1963 — Section 34 and its proviso.
 - Indian Evidence Act, 1872 — Section 114(e) (presumption of regularity of official acts).
 - Registration Act, 1908 — Section 17 (compulsory registration): <https://www.indiacode.nic.in/show-data?actid=AC_CEN_18_43_00004_190816_1523340837338&orderno=18>
-
-**Search window**
-
-Sources were searched on 24 August 2026 for the preceding 48 hours in the first instance. No qualifying property law judgment or statutory, RERA or land acquisition development was reported in that window, so it was widened to seven days. *Jamnabai* was selected over *Mukkera Venkata Ratnam v. Vantasala China Venkateswarlu*, 2026 INSC 810 (6 August 2026), on recency and transactional breadth.
 
 ---
 

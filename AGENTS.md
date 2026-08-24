@@ -29,6 +29,13 @@ numbers, reportability, or source access to the disclaimer. Facts about the
 judgment itself (for example that it is marked non-reportable) belong in the
 body of the article where they inform the reader, not in the disclaimer.
 
+Nothing about the editorial process goes on the site. No search window, no
+recency window, no note that the window was widened, no deviation rung, no
+explanation of why this judgment was chosen over another, and no `deviation`
+field in the front matter. Report all of that in the session and in the run's
+notification instead. The published article should read as commentary on the
+judgment, with no trace of how the subject was picked.
+
 ### Never publish a case note on a judgment you have not read
 
 The disclaimer above is not a licence to publish unverified analysis. Do not
