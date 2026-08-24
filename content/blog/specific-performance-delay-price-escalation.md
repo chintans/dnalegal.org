@@ -235,4 +235,4 @@ For sellers, the lesson is that delay is not a strategy. For buyers, it is that 
 
 ---
 
-*Disclaimer: This article is general information on Indian law. It is not legal advice and does not create an attorney–client relationship. The law here is fact-sensitive and continues to develop; verify all citations against the current reports before relying on them. Please consult a qualified advocate on the facts of your matter.*
+*This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*

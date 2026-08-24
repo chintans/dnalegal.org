@@ -180,4 +180,4 @@ Sources were searched on 24 August 2026 for the preceding 48 hours in the first 
 
 ---
 
-*Disclaimer: This article is general information on Indian law, prepared from the full text of the judgment as reported at the source linked above. Paragraph references are to that text. The judgment is marked non-reportable, which bears on its citation in subsequent proceedings. This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*
+*This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*

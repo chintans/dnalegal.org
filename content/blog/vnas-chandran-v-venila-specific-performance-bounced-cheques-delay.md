@@ -1,181 +1,183 @@
 ---
-title: "Bounced Cheques and Twenty-Two Years of Delay: What V.N.A.S. Chandran v. S. Venila Means for Specific Performance Claims"
+title: "He Who Seeks Equity Must Do Equity: V.N.A.S. Chandran v. S. Venila on Conduct, Delay and Discretion in Specific Performance"
 slug: "vnas-chandran-v-venila-specific-performance-bounced-cheques-delay"
-seoTitle: "V.N.A.S. Chandran v. Venila: SC on Specific Performance & Delay"
-description: "In V.N.A.S. Chandran v. S. Venila (2026 INSC 776), the Supreme Court set aside a Madras High Court decree of specific performance, holding that dishonoured cheques and a 22-year lapse defeated the buyer's claim of continuous readiness and willingness. A detailed case analysis."
-excerpt: "Two bounced cheques and two decades of litigation cost a buyer their decree. This case note unpacks V.N.A.S. Chandran v. S. Venila (2026 INSC 776) and what it means for pending specific performance suits."
+seoTitle: "V.N.A.S. Chandran v. Venila (2026 INSC 776): Conduct & Section 20"
+description: "In V.N.A.S. Chandran v. S. Venila, 2026 INSC 776 (31 July 2026), the Supreme Court refused specific performance of a 2004 Ooty agreement — not for want of readiness, but because the buyers' inconsistent conduct disentitled them to equitable relief under the unamended Section 20."
+excerpt: "The buyers may well have been able to pay. They still lost the property. This case note examines how inconsistent conduct, a retaliatory FIR and two decades of delay defeated a decree of specific performance."
 category: "Civil & Property Litigation"
 tags:
   - Specific performance
   - Specific Relief Act 1963
-  - Section 16(c)
-  - Readiness and willingness
+  - Section 20 discretion
+  - Clean hands
+  - Conduct of the plaintiff
   - Agreement to sell
   - Order 41 Rule 22 CPC
   - Cross-objections
+  - Section 55(6)(b) Transfer of Property Act
   - Immovable property
   - Supreme Court of India
 author: "DNA Legal"
 datePublished: 2026-08-22
-dateModified: 2026-08-22
-readingTime: "15 min"
+dateModified: 2026-08-24
+readingTime: "14 min"
 jurisdiction: "India"
 schema:
   type: "LegalArticle"
   faqPage: true
 canonical: "/insights/vnas-chandran-v-venila-specific-performance-bounced-cheques-delay"
+court: "Supreme Court of India"
+case: "V.N.A.S. Chandran v. Mrs. S. Venila and Others"
+citation: "2026 INSC 776"
+judgment_date: 2026-07-31
 ---
 
-**Quick answer:** In *V.N.A.S. Chandran v. S. Venila & Others*, 2026 INSC 776 (decided 31 July 2026), the Supreme Court set aside a Madras High Court decree granting specific performance of a 2004 agreement to sell immovable property in Ooty, and restored the trial court's order limiting the buyer to a refund of the advance with interest. The Court held that two cheques issued by the buyer towards part of the balance consideration — for ₹25 lakh and ₹5 lakh — had bounced for want of funds, defeating the claim of continuous readiness and willingness under Section 16(c) of the Specific Relief Act, 1963. The 22-year gap between the agreement and the final decree was treated as a further, independent factor weighing against equitable relief. The Court also clarified a distinct procedural point: a respondent who supports the decree under appeal need not file cross-objections under Order 41 Rule 22 CPC merely to assail a finding recorded against them, so long as no additional relief is sought.
+**Quick answer:** In *V.N.A.S. Chandran v. Mrs. S. Venila and Others*, 2026 INSC 776, decided on 31 July 2026, the Supreme Court set aside a Madras High Court decree of specific performance and restored the trial court's decree confining the buyers to a refund of their ₹85,00,000 advance with interest at 15% per annum, secured by a charge on the property under Section 55(6)(b) of the Transfer of Property Act, 1882. The refusal did not rest on a finding that the buyers lacked funds. It rested on their conduct: a retaliatory criminal complaint demanding recovery of the very advance they were suing to convert into a conveyance, irreconcilable positions taken in parallel proceedings about whether their rights had been assigned to a third party, and an onward agreement to sell the property at a lower price while the original agreement was still on foot. Over two decades of delay and hardship to an elderly seller reinforced the refusal. Because the agreement predated the Specific Relief (Amendment) Act, 2018, the discretion under the unamended Section 20 was available.
 
 ---
 
 ## Key Takeaways
 
-- **Dishonoured cheques are direct evidence against readiness.** A buyer who tenders cheques towards the balance consideration, and those cheques bounce for insufficient funds, hands the seller a documentary record of financial incapacity — precisely what Section 16(c) requires the buyer to disprove.
-- **Long delay is not merely a price-escalation issue.** Chandran treats the sheer passage of time — here, 22 years from agreement to Supreme Court disposal — as an independent circumstance relevant to whether equitable relief should be granted, separate from any argument about market appreciation.
-- **Specific performance remains discretionary for pre-2018 contracts.** The 2004 agreement fell squarely within the unamended Section 20 regime, under which the remedy was never a matter of right.
-- **A refund with interest is the fallback, not a consolation prize.** The trial court's original disposal — refund of the ₹85 lakh advance with interest — was restored in full, underscoring that Section 16(c) failure does not leave the buyer without any remedy at all.
-- **A new procedural rule on cross-objections.** A party who is content with the operative decree, but disagrees with a finding recorded en route to it, can challenge that finding on appeal without a formal cross-objection, provided it seeks nothing beyond the decree already has.
+- **Conduct, not capacity, decided this case.** The Court accepted that the buyers "may have been desirous of purchasing the suit property and even took steps towards it" — and still refused relief, because their subsequent conduct countervailed an equitable remedy.
+- **A "counterblast" FIR is no excuse.** That the buyers' criminal complaint answered the seller's earlier one did not neutralise it. Asking the police to *recover* the advance is inconsistent with asking a civil court to compel conveyance.
+- **Inconsistent positions across proceedings are fatal.** Asserting in one suit that rights had been validly assigned to a third party, and in another that no assignment ever occurred, is a contradiction "impossible to reconcile".
+- **A plaintiff who stays out of the witness box cannot disown a spouse's conduct.** Plaintiff No. 1 neither repudiated her husband's actions nor testified, and could not rely on the technicality that he, not she, lodged the complaint.
+- **Cross-objections are not needed to attack a finding.** Affirming *S. Nazeer Ahmed v. State Bank of Mysore* (2007), a respondent supporting a decree may impugn an adverse finding under Order XLI Rule 22 CPC without cross-objecting, provided no relief beyond the decree is sought.
+- **Failure on the primary remedy is not forfeiture.** The advance came back with interest and a statutory charge over the property.
 
 ---
 
-## Case Summary
+## 1. Introduction
 
-### Parties and Property
+The commonest way to read a refused specific performance claim is as a failure of proof: the buyer could not show the money. *V.N.A.S. Chandran v. Mrs. S. Venila and Others* is a more uncomfortable decision than that, and a more useful one. The Supreme Court did not hold that these buyers were unable to complete. It held that people who behave as they had behaved should not receive an equitable remedy, however able they were to pay.
 
-The appeal arose out of an **Agreement to Sell dated 1 April 2004** between the appellant, V.N.A.S. Chandran, and the respondents, led by S. Venila. The subject matter was an immovable property situated at **Udhagamandalam (Ooty)**, Tamil Nadu, agreed to be sold for a total consideration of **₹2.25 crore**. An advance of **₹85 lakh** was paid at or shortly after execution of the agreement, leaving a substantial balance to be paid by the buyers at the time of registration of the sale deed.
+The dispute concerned an Agreement to Sell dated 1 April 2004 over immovable property at Udhagamandalam (Ooty), Tamil Nadu, for a total consideration of ₹2,25,00,000, of which the buyers claimed to have paid ₹85,00,000 in advance. Twenty-two years and four appeals later, the Court restored the trial court's original disposal: no conveyance, but the advance returned with interest and secured on the property.
 
-### The Cheques That Bounced
+Two features make the judgment worth close attention. The first is doctrinal emphasis. The Court's operative reasoning runs through Section 20 of the Specific Relief Act, 1963 and the conduct of the plaintiff, quoting *Major Gen. Darshan Singh v. Brij Bhushan Chaudhary* (2024) for the proposition that "a person who seeks equity must do equity". Readiness and willingness under Section 16(c) is discussed, but the case is not decided on it. The second is the range of conduct the Court was prepared to count: not fraud, not forgery, but litigation positions that could not stand together.
 
-Central to the dispute was the buyers' conduct in tendering part of the balance consideration. Two cheques — one for **₹25 lakh** and another for **₹5 lakh** — were issued by the buyers towards the transaction. Both were **dishonoured on presentation for insufficient funds**. This was not a peripheral or disputed fact; it formed part of the documentary record before the trial court and became the anchor for the seller's case that the buyers were never in a financial position to complete the purchase.
+This article sets out the facts and the procedural history, analyses the conduct-based ratio and the subsidiary holdings on cross-objections and declaratory relief, and then draws out what the decision means for buyers, sellers and appellate practitioners.
 
-### The Litigation Path
+## 2. Case summary and background
 
-The procedural journey illustrates exactly the kind of delay that recurs in Indian property litigation:
+The seller was the appellant, V.N.A.S. Chandran (Defendant No. 1). The purchaser under the agreement was Plaintiff No. 1, S. Venila; her husband, Plaintiff No. 2, held the seller's Power of Attorney and gave an undertaking on the date of the agreement. He was, as the Court put it, "central to the transaction" from the inception.
 
-1. **Trial court** — On appraising the evidence, the trial court declined to decree specific performance. It held that the buyers had failed to establish continuous readiness and willingness, and confined relief to a **refund of the ₹85 lakh advance with interest**.
-2. **Madras High Court** — On appeal, the High Court took the opposite view, decreed specific performance in the buyers' favour, and directed execution of the sale deed on payment of the balance consideration.
-3. **Supreme Court** — On further appeal by the seller, the Supreme Court, speaking through a Bench of **Justices Prashant Kumar Mishra and N.V. Anjaria**, reversed the High Court and **restored the trial court's decree**.
+Performance was not straightforward. Clause 7 of the agreement referred to an interim injunction in a partition suit, and completion was contingent on an ex parte decree being set aside and on tenants vacating — matters the trial court later found lay outside the buyers' control.
 
-By the time the Supreme Court disposed of the appeal, **22 years** had elapsed since the agreement was executed — a span covering trial, first appeal, and final appeal, and mirroring the kind of multi-decade timeline that has become depressingly familiar in Indian civil litigation over immovable property.
+Payments were made and, where instruments failed, made good. Of three cheques of ₹25,00,000 each, the first was dishonoured for want of funds; the seller then acknowledged, by letter dated 10 April 2004, receipt of ₹25,00,000 in two instalments of ₹15,00,000 and ₹10,00,000 in lieu of it, and returned the cheque. Of two later cheques of ₹5,00,000 each, one was honoured and, in respect of the other, payment was made. The seller disputed the total, admitting only ₹60,00,000; the trial court found ₹85,00,000 had been received.
 
-### The Holding
+The conduct that decided the case came later. While the agreement subsisted and payments were being made under it, Plaintiff No. 2 entered a sub-agreement to sell the same property to Defendant No. 5 for ₹1,50,00,000 — appreciably less than the price under the head agreement — and took an advance. The Power of Attorney and sub-agreement were later cancelled and that advance refunded, and Defendant No. 5's suit, OS No. 75 of 2005, was dismissed, its interim injunction of 11 June 2005 having been vacated on 10 August 2005. In dismissing it, the Sub-Court recorded that the suit had been undervalued to invoke its jurisdiction and that Defendant No. 5 had acted "hand in hand" with Plaintiff No. 2, being no more than a "tool", "name-lender" or "puppet plaintiff".
 
-The Supreme Court's reasoning proceeded on two independent, mutually reinforcing grounds:
+Then came the criminal complaints. The seller lodged one against Plaintiff No. 2 before the Judicial Magistrate No. 2, Madurai, alleging robbery and threats at the property. On 27 December 2005, Plaintiff No. 2 lodged a counter-complaint asking the police to trace the seller and recover ₹85,00,000 from him, alleging the money had been obtained by fraudulently suppressing the injunction in the partition suit — despite Clause 7 expressly referring to it. That counter-complaint did not disclose the pending civil proceedings.
 
-**First**, on the facts, the buyers had not discharged their burden under Section 16(c) of the Specific Relief Act, 1963. Their own conduct — issuing cheques that bounced for lack of funds — was direct, self-generated evidence contradicting any claim of continuous financial capacity to perform. The Court reiterated that specific performance is an **equitable remedy and not a matter of right**, a proposition of particular force here because the 2004 agreement fell under the **unamended Section 20**, which conferred express discretion on the court even where the contract was otherwise valid and enforceable.
+The trial court, by judgment dated 22 November 2007, framed ten issues and decreed the suit only to the extent of refund of ₹85,00,000 with interest at 15% per annum from the date of suit until realisation, creating a charge on the property under Section 55(6)(b) of the Transfer of Property Act, 1882, and dismissed it otherwise. It found no valid assignment to Defendant No. 5; that time was not strictly of the essence, performance being contingent on events beyond the buyers' control; and that the buyers, blowing hot and cold, had not come with clean hands and so were not entitled to relief under Section 20.
 
-**Second**, and separately, the Court treated the **long lapse of time between execution of the agreement and final adjudication** as itself a relevant factor weighing against the grant of an extraordinary equitable remedy. In doing so, the Bench drew on the line of authority — including *Muddam Raju Yadav v. B. Raja Shanker* (2026) — that treats undue delay as corrosive of a plaintiff's claim to equitable relief, independent of whether that delay is neatly traceable to one party's default.
+The High Court, in AS No. 443 of 2008, reversed on 11 October 2011. It admitted additional evidence under Order XLI Rule 27 CPC (marked Ex. A-48), held on *S. Nazeer Ahmed* that the seller could assail an adverse finding without cross-objecting, characterised the buyers' complaint as a mere counterblast, held that the seller had not pleaded want of funds and could not raise it first on appeal, and treated a demand draft for ₹1,40,00,000 dated 14 June 2011 produced at the hearing as proof of continuing readiness. It decreed specific performance on deposit of ₹1,40,00,000.
 
-The consequence was that the High Court's decree of specific performance could not stand, and the trial court's refund order — the buyers' advance of ₹85 lakh returned with interest — was restored as the final disposal of the suit.
+The Supreme Court, in Civil Appeals Nos. 7825–7828 of 2013 decided by Prashant Kumar Mishra and N.V. Anjaria JJ, allowed the seller's appeals, set aside that decree, and restored the trial court's judgment, permitting the buyers to withdraw the ₹1,40,00,000 they had deposited on 12 November 2011 together with accrued interest, with no order as to costs.
 
-### The Cross-Objections Point
+## 3. Legal analysis
 
-A distinct, and doctrinally interesting, holding in the same judgment concerned appellate procedure. Where a respondent to an appeal is satisfied with the decree as it stands, but wishes to challenge a specific **finding** recorded against them in the course of reaching that decree, must they file formal cross-objections under **Order 41 Rule 22** of the Code of Civil Procedure, 1908? The Supreme Court held **no** — a respondent supporting the decree may impugn an adverse finding without filing cross-objections, provided they seek **no relief beyond what the decree already grants**. Cross-objections remain necessary only where the respondent wants the appellate court to grant something more, or something different, from what the decree below already secured for them. This clarifies the boundary between a respondent's right to defend a favourable decree on any ground and their obligation to cross-appeal when seeking enlarged relief.
+### 3.1 The framework: Section 20 and the pre-2018 regime
+
+Because the agreement was executed in 2004, the case fell under the unamended Act, where specific performance was discretionary rather than presumptive. The Court set out the settled position through *N.P. Thirugnanam v. Dr. R. Jagan Mohan Rao* (1995), *Nanjappan v. Ramasamy* (2015) and *Kamal Kumar* (2019). The last supplies the five-question checklist a court works through: a valid concluded contract; readiness and willingness; actual performance and its extent; whether relief would be equitable or cause hardship to the defendant; and whether some alternative relief, such as refund of earnest money, is due.
+
+That fourth question is where this case was decided, and it is worth stressing how the Court used the framework. It did not find the buyers in breach of Section 16(c). *N.P. Thirugnanam* is quoted at length on continuous readiness, and the discussion of conduct "prior and subsequent to the filing of the suit" in that passage is doing double duty — it belongs to the readiness inquiry, but it also opens the door to the discretionary assessment that follows.
+
+### 3.2 Conduct as the operative ground
+
+The Court's own summation is the clearest statement of the ratio: the plaintiffs "may have been desirous of purchasing the suit property and even took steps towards it; however, their subsequent inconsistent conduct countervails the grant of an exceptional and equitable remedy". Three strands made up that conduct.
+
+**The retaliatory complaint.** The Court declined to accept the High Court's characterisation of the buyers' FIR as a benign counterblast. It acknowledged the provocation — the seller had lodged his own complaint at Madurai — but held that "the complaint itself being a 'counterblast' is no excuse in law; in fact, Courts generally censure these kind of retributive criminal proceedings." The substantive objection was one of inconsistency: a party who asks the police to recover a sum of money is not simultaneously insisting on conveyance of the property that money was paid for. The chronology mattered too — the counter-complaint came well after both the seller's complaint and the institution of the suit, and did not disclose the civil proceedings.
+
+**Irreconcilable positions on assignment.** In legal notices dated 23 May 2005 and in the pleadings in OS No. 75 of 2005, the buyers' position was that rights under the agreement had been assigned to Defendant No. 5 with the seller's knowledge and consent, making the sub-agreement valid and binding. In the present suit they asserted that no assignment had occurred and that Plaintiff No. 1 alone remained entitled to specific performance. The Court expressly declined to decide whether the transaction amounted in law to an assignment, or to comment on its commercial rationale: what mattered was that "the Plaintiffs adopted two contradictory positions which are impossible to reconcile."
+
+**Dealing with the property behind the seller's back.** The sub-agreement was made while the head agreement subsisted and payments were being made under it, at a materially lower price. The Court worked through both possibilities. If Plaintiff No. 2 acted as the seller's attorney, he intended to alienate the property before title passed to his own wife, and for less. If he acted for his wife, her rights necessarily stood assigned to Defendant No. 5 — which is what the buyers denied in this suit. Either way the seller had a legitimate grievance, sharpened by having been made to face OS No. 75 of 2005 and an interim injunction obtained in it.
+
+To this the Court added an evidentiary point of general application. Plaintiff No. 1 neither disowned her husband's conduct nor entered the witness box, and could not therefore take advantage of the technical fact that he lodged the complaint. Relying on *Janki Vashdeo Bhojwani v. IndusInd Bank* (2004) and *Rajesh Kumar v. Anand Kumar* (2024), the Court held that the plaintiffs could not "seek to be treated as a composite unit when it benefits them, but resile from the position when it does not."
+
+The doctrinal anchor is *Major Gen. Darshan Singh v. Brij Bhushan Chaudhary* (2024): discretion under Section 20 depends on several factors, one being the plaintiff's conduct, because "a person who seeks equity must do equity". *Muddam Raju Yadav v. B. Raja Shanker* (2026) is quoted for the sterner formulation that even a slight doubt about the plaintiff's bona fides, or material facts withheld, warrants refusal.
+
+### 3.3 Delay and hardship
+
+Delay entered as reinforcement rather than as the primary ground. Over two decades had passed since the agreement, and the Court invoked *Saradamani Kandappan v. S. Rajalakshmi* (2011) and *Nanjappan* for the proposition that such a lapse militates against specific performance. It then added the human facts: the seller is "today a man of highly advanced age" and Plaintiff No. 2 has died. Hardship to the defendant being a recognised factor under Section 20 on the authority of *Kamal Kumar*, the Court concluded that justice required restoring the parties to their pre-transaction positions.
+
+It is worth being precise about what this does and does not establish. The Court did not hold that elapsed time alone defeats a claim, nor did it make any finding about price appreciation. Delay and hardship operated on a discretion that the conduct findings had already tilted. A practitioner citing *Chandran* for a freestanding delay proposition would be overreading it.
+
+### 3.4 Cross-objections under Order XLI Rule 22
+
+The Court affirmed — rather than created — the rule that a respondent supporting a decree may impugn a finding adverse to him without filing cross-objections, provided he seeks no relief beyond what the decree already grants. The authority is *S. Nazeer Ahmed v. State Bank of Mysore* (2007), applied by the High Court and endorsed here. Because the seller sought only to sustain the trial court's refusal of specific performance, he was entitled to attack the readiness and willingness finding without cross-objecting.
+
+This is a useful practical point precisely because it is not new: it is settled law that respondents in multi-tier appeals still get caught out by. Note the limit. The permission extends to *findings*, not to relief. A respondent who wants more than the decree gives must cross-object.
+
+### 3.5 Declaratory relief and the maintainability objection
+
+The seller also argued that the suit was not maintainable because the buyers had not sought a declaration that his termination of the agreement was invalid. The Court addressed this through *Annamalai v. Vasanthi*, which holds that declaratory relief is required where a doubt or cloud lies on the plaintiff's right and the consequential relief depends on removing it — a question to be determined on the facts of each case rather than as a rule. The point did not ultimately drive the outcome, but the reasoning is worth noting for anyone framing a plaint where a contract has been purportedly terminated.
+
+### 3.6 Assessment
+
+The judgment's strength is its honesty about what it is doing. It would have been easy to dress a conduct-based refusal in the language of Section 16(c) — to say the buyers were never really ready — and the record offered material for it. The Court declined, conceding that the buyers may genuinely have wanted and been able to complete, and refusing relief anyway. That is the correct use of an equitable discretion, and it makes the decision more candid than the many judgments that reach the same result by straining a readiness finding.
+
+The reservation concerns predictability. Once inconsistency in litigation positions is enough to forfeit specific performance, a great deal turns on how strictly a court reads the parties' pleadings across parallel proceedings — and Indian property litigation generates parallel proceedings as a matter of course. The Court's insistence that it was not deciding whether an assignment had occurred, only that the two positions could not stand together, is disciplined; applied loosely by courts below, the same reasoning could penalise ordinary alternative pleading. The safeguard is that the conduct here was cumulative and included a criminal complaint seeking recovery of the consideration.
+
+## 4. Practical significance
+
+**For buyers pursuing specific performance.** Keep every position consistent across every forum. The single most damaging fact here was a criminal complaint demanding the money back, filed while a suit for conveyance was pending — a step that reads as an election between remedies whatever was intended. Never answer a seller's criminal complaint with a retaliatory one; the Court said plainly that courts censure such proceedings. Where rights may have been dealt with in an onward transaction, address it in the plaint rather than denying it in one suit and asserting it in another. And the named purchaser must testify: a plaintiff who stays out of the witness box while a spouse or attorney runs the litigation cannot later disclaim what was done in her name.
+
+**On the transaction itself.** Do not create third-party interests in the property while your own purchase is incomplete. An onward agreement at a lower price, made under a power of attorney granted by the seller, was read as evidence of bad faith on either available construction. If an assignment is intended, document it and disclose it.
+
+**For sellers defending such suits.** Conduct is a defence in its own right, and it should be pleaded as one rather than folded into a want-of-funds case — particularly since the High Court here held the seller could not raise absence of funds for the first time on appeal, not having pleaded or deposed to it. Plead the plaintiff's inconsistent positions with dates and documents, annex the pleadings from the parallel proceedings, and plead hardship specifically: age, intervening deaths, changed circumstances. Do not expect to keep the advance: a successful defence still left this seller repaying ₹85,00,000 with 15% interest from the date of suit, charged on the property.
+
+**For litigators on appeal.** Use *S. Nazeer Ahmed* to attack adverse findings while supporting a decree, but keep the distinction between findings and relief firmly in view. Where the first appellate court has taken additional evidence under Order XLI Rule 27, engage with it rather than objecting to it late. And identify the applicable statutory regime at the outset: for a pre-October 2018 agreement, the discretionary framework of the unamended Section 20 is the battleground, and conduct arguments carry weight there that they would not carry under a purely Section 16-driven analysis.
+
+## 5. Conclusion
+
+*V.N.A.S. Chandran v. S. Venila* is a decision about the price of inconsistency. The buyers had a written agreement, had paid ₹85,00,000, had a High Court decree in hand, and had produced a demand draft for the balance in open court. They lost the property because, over the years of dispute, they had asked the police to recover their money while asking a civil court to compel a sale, and had told one court their rights were assigned while telling another they were not.
+
+For pre-2018 agreements still working through the system, the message is that Section 20 discretion has real content. A plaintiff who satisfies Section 16(c) has not thereby earned a decree; the court still asks whether granting one would be equitable, and the plaintiff's own conduct across the whole life of the dispute is admissible on that question. Delay and hardship to an elderly defendant will reinforce a refusal, but they did not create it here.
+
+The counterweight, and it matters, is that refusal of the equitable remedy left the buyers with a monetary one: their advance, with interest at 15% from the date of suit, secured by a statutory charge on the property under Section 55(6)(b) of the Transfer of Property Act, 1882. Losing the house is not the same as losing the money.
 
 ---
 
-## Legal Analysis
-
-### 1. Why the Pre-2018 Regime Governs — and Why That Matters
-
-The Specific Relief (Amendment) Act, 2018, which came into force on 1 October 2018, substituted Section 10 to make specific performance the *default* remedy — "shall be enforced," in place of the earlier "may, in the discretion of the court, be enforced" — subject only to Sections 11(2), 14 and 16. The Supreme Court has held that this amendment operates **prospectively** (see *Katta Sujatha Reddy v. Siddamsetty Infra Projects (P) Ltd.*, (2023) 1 SCC 355).
-
-Because the agreement in *Chandran* was executed in **2004**, the applicable law was the **unamended** Section 20, under which the grant of specific performance was squarely within judicial discretion, guided by (but not mechanically bound to) the illustrative circumstances the old Section 20(2) set out. This is not a technicality: it is the reason the Court felt free to weigh the twenty-two-year delay as a discretionary factor in its own right, rather than treating Section 16(c) compliance as the sole gatekeeping question. Litigants and counsel handling long-pending specific performance suits arising from **pre-October 2018** agreements — and there remain a great many in the pipeline — should recognise that they are litigating under a materially different, more discretionary framework than a buyer contracting today.
-
-### 2. Section 16(c): The Bounced Cheque as Documentary Proof Against the Plaintiff
-
-Section 16(c) bars a plaintiff from obtaining specific performance unless they prove that they have performed, or have always been ready and willing to perform, the essential terms of the contract that were to be performed by them. As the Supreme Court explained in *His Holiness Acharya Swami Ganesh Dassji v. Sita Ram Thapar*, (1996) 4 SCC 526, readiness denotes **financial capacity**, while willingness denotes **conduct** evidencing a genuine and continuing intention to perform.
-
-*Chandran* is a sharp illustration of how a plaintiff can defeat their own case through the very steps taken to prove it. Ordinarily, a buyer who tenders payment — even informally, by cheque — builds a record that helps demonstrate willingness. Here, that record cut the other way: the cheques for ₹25 lakh and ₹5 lakh bouncing for **insufficient funds** converted what might have been corroborative evidence of willingness into decisive evidence of the *absence* of readiness. This is a useful reminder that readiness and willingness are not proved merely by the *gesture* of tendering payment; they are proved (or disproved) by whether the tender was capable of being honoured. A dishonoured cheque is, in this sense, worse for a plaintiff's case than no tender at all, because it affirmatively demonstrates incapacity at the moment it mattered.
-
-For drafting and litigation strategy, the lesson is direct: a buyer relying on cheques, bank guarantees, or informal payment instruments to demonstrate readiness must be certain the underlying funds exist and are unencumbered before the instrument is presented. Where finances are uncertain, alternative proof — fixed deposits, loan sanction letters, or a deposit into court under Order 39 or under the trial court's direction — is markedly safer than an instrument that can dishonour and thereby generate a permanent evidentiary record against the very party who tendered it.
-
-### 3. Delay as an Independent Ground, Distinct from Price Escalation
-
-Much of the existing jurisprudence on delay in specific performance suits — *K.S. Vidyanadam v. Vairavan*, (1997) 3 SCC 1; *Saradamani Kandappan v. S. Rajalakshmi*, (2011) 12 SCC 18 — frames the delay question through the lens of **price escalation**: a buyer who sits on a contract while land appreciates should not be permitted to treat the agreement as a free option on a rising market. *Chandran* is notable for **not** resting its delay-based reasoning on any recorded finding about the property's appreciation in value. Instead, the Court treated the **institutional fact of a 22-year lapse** between agreement and final adjudication as relevant in itself to the equitable calculus — reflecting a broader judicial disposition, echoed in *Muddam Raju Yadav v. B. Raja Shanker* (2026), that extraordinary equitable relief sits uneasily with claims resurrected after decades of litigation, whatever the immediate cause of the delay.
-
-This should not be overread as a wholesale departure from the *causation*-sensitive approach discussed elsewhere in this jurisprudence, under which delay attributable to the *seller's* default or to ordinary court congestion is not held against a diligent buyer. *Chandran* did not need to reach that causation question, because the Section 16(c) finding against the buyers — the bounced cheques — was already dispositive. What the judgment does add to the landscape is a reminder that **delay can operate as reinforcing background context** for a court already inclined, on the primary facts, to withhold the remedy — even where the judgment does not organise its reasoning around who specifically caused which period of the delay.
-
-### 4. The Refund Remedy: Section 16(c) Failure Is Not a Forfeiture
-
-It is worth underscoring what the Supreme Court did **not** do. It did not leave the buyers without a remedy, nor did it treat the seller's retention of the ₹85 lakh advance as justified. By restoring the trial court's decree, the Court confirmed that the buyers were entitled to a **refund of the advance with interest** — the conventional fallback where a plaintiff fails to establish entitlement to the primary equitable remedy but has parted with money under a contract that the defendant has, for whatever reason, not completed. This tracks the broader statutory scheme: Section 21 permits compensation in substitution for specific performance, and courts have consistently held that failure under Section 16(c) forecloses conveyance, not restitution. Practitioners defending a seller in these circumstances should not assume that a Section 16(c) victory extinguishes the buyer's claim to advance money paid; it converts a proprietary remedy into a monetary one.
-
-### 5. The Order 41 Rule 22 Point in Context
-
-The cross-objections holding, while procedural rather than substantive, has practical bite for exactly the kind of multi-tier litigation *Chandran* itself exemplifies. Order 41 Rule 22 CPC allows a respondent to an appeal to file cross-objections against a part of the decree that is adverse to them — but filing cross-objections is optional, not mandatory, and exists to let a respondent seek *affirmative* relief beyond what the decree already gives them. Where a respondent has no quarrel with the decree's operative directions and merely wants the appellate court to correct or discard a particular finding recorded against them along the way — for instance, a trial court finding on an issue that did not, in the end, affect the ultimate relief granted — the Supreme Court has now confirmed that such a respondent may raise that challenge in their reply or written submissions without the formality of a cross-objection. This spares respondents from a trap that has occasionally been used to shut out legitimate challenges to adverse findings on the ground that no formal cross-objection was filed, and it aligns procedure with the substance of what the respondent is actually seeking.
-
----
-
-## The Leading Authorities at a Glance
+## The authorities relied on
 
 | Case | Proposition |
 |---|---|
-| *His Holiness Acharya Swami Ganesh Dassji v. Sita Ram Thapar*, (1996) 4 SCC 526 | Readiness (capacity) and willingness (conduct) are distinct elements of Section 16(c), both of which must be proved. |
-| *K.S. Vidyanadam v. Vairavan*, (1997) 3 SCC 1 | A buyer's own delay, combined with price escalation, is a relevant ground for refusing discretionary relief. |
-| *Saradamani Kandappan v. S. Rajalakshmi*, (2011) 12 SCC 18 | The traditional "time is not of the essence" rule requires reconsideration in light of real estate appreciation. |
-| *Katta Sujatha Reddy v. Siddamsetty Infra Projects (P) Ltd.*, (2023) 1 SCC 355 | The Specific Relief (Amendment) Act, 2018 operates prospectively; pre-2018 agreements remain governed by the unamended Act. |
-| *Muddam Raju Yadav v. B. Raja Shanker* (2026) | Reaffirms the discretionary, equitable character of specific performance under the unamended Specific Relief Act. |
-| *V.N.A.S. Chandran v. S. Venila & Others*, 2026 INSC 776 | Dishonoured cheques tendered towards the balance consideration defeat a claim of continuous readiness and willingness; a 22-year lapse between agreement and adjudication is a further factor against equitable relief; a respondent supporting the decree need not file cross-objections to assail an adverse finding where no additional relief is sought. |
-
----
-
-## Practical Significance
-
-### For Buyers Pursuing Specific Performance
-
-- **Never tender an instrument you cannot honour.** If cash flow is uncertain, use a route that does not generate a dishonour record — a deposit into court, a bank guarantee backed by a sanctioned facility, or a clear written undertaking rather than a cheque drawn against insufficient funds.
-- **Build a contemporaneous record of capacity**, not just of intention. Bank statements, fixed deposits, and loan sanction letters, maintained and updated through the pendency of the suit, are far more persuasive — and far more durable — than a single act of tendering payment.
-- **Do not assume that filing suit within limitation is enough.** Continuous readiness must be maintained from the date of the agreement through to the date of the decree; a buyer's financial position at the time of trial, and even during a first or second appeal, remains relevant.
-- **Understand the fallback.** Even a well-prepared Section 16(c) case can fail on the discretion point if a court is troubled by the sheer duration of the litigation. Plead and prove the advance paid clearly, so that a refund-with-interest order is available as a fallback if specific performance is refused.
-
-### For Sellers Defending Such Suits
-
-- **Preserve and produce evidence of dishonoured instruments.** Bank dishonour memos and return-cheque records are precisely the kind of documentary evidence that can be dispositive, as *Chandran* shows.
-- **Plead delay specifically**, with dates and particulars covering the entire span of the litigation, not merely the buyer's conduct before suit. *Chandran* indicates that appellate courts may weigh the overall duration of the dispute as relevant context even without a granular causation finding.
-- **Do not expect to retain the advance outright.** A successful Section 16(c) defence ordinarily still requires the seller to refund the advance with interest; sellers should factor this into settlement calculations rather than assuming a "win" means retaining the money.
-
-### For Litigators on Appeal
-
-- **The cross-objections clarification should be pleaded and relied upon** wherever a party supporting a decree wants an adverse finding reconsidered without seeking additional relief — it avoids the risk of a technical objection that the challenge was procedurally improper for want of a formal cross-objection.
-- **Distinguish pre- and post-2018 agreements early** in any specific performance matter. The applicable statutory regime materially affects how much discretion a court retains, and therefore how delay and readiness arguments should be framed and prioritised.
+| *N.P. Thirugnanam v. Dr. R. Jagan Mohan Rao*, (1995) 5 SCC 115 | Continuous readiness and willingness is a condition precedent; conduct before and after suit is relevant to judging it. |
+| *S. Nazeer Ahmed v. State Bank of Mysore*, 2007 INSC 34 | A respondent supporting a decree may impugn an adverse finding without cross-objections where no additional relief is sought. |
+| *Saradamani Kandappan v. S. Rajalakshmi*, 2011 INSC 446 | A long lapse of time militates against granting specific performance. |
+| *Nanjappan v. Ramasamy*, 2015 INSC 152 | Summarises the pre-2018 discretionary position under Section 20. |
+| *Kamal Kumar*, 2019 INSC 16 | Sets out the five questions in a specific performance suit; hardship to the defendant is a recognised discretionary factor. |
+| *Janki Vashdeo Bhojwani v. IndusInd Bank*, 2004 INSC 695; *Rajesh Kumar v. Anand Kumar*, 2024 INSC 444 | A party cannot claim the benefit of a composite position while resiling from it when inconvenient. |
+| *Major Gen. Darshan Singh v. Brij Bhushan Chaudhary*, 2024 INSC 157 | Discretion under Section 20 turns partly on the plaintiff's conduct: one who seeks equity must do equity. |
+| *Muddam Raju Yadav v. B. Raja Shanker*, 2026 INSC 214 | Even slight doubt as to the plaintiff's bona fides, or material facts withheld, warrants refusal of the discretionary relief. |
+| *Annamalai v. Vasanthi* | Declaratory relief is needed where a cloud on the plaintiff's right must be removed for consequential relief to follow; determined on the facts of each case. |
 
 ---
 
 ## Frequently Asked Questions
 
 ### What did the Supreme Court decide in V.N.A.S. Chandran v. S. Venila?
-The Court set aside a Madras High Court decree of specific performance and restored the trial court's order, holding that the buyers had failed to prove continuous readiness and willingness under Section 16(c) of the Specific Relief Act, 1963, after two cheques tendered towards the balance consideration were dishonoured for insufficient funds. It also held that the long lapse of time — 22 years — between the agreement and final adjudication was a relevant factor against granting the equitable remedy.
+It set aside a Madras High Court decree of specific performance and restored the trial court's decree, which had confined the buyers to a refund of their ₹85,00,000 advance with 15% interest, charged on the property. The refusal rested on the buyers' inconsistent conduct rather than on any finding that they lacked funds, reinforced by more than two decades of delay and hardship to an elderly seller.
 
-### Why do dishonoured cheques matter so much to a specific performance claim?
-Section 16(c) requires the buyer to prove financial capacity (readiness) and a genuine, continuing intention to perform (willingness). A cheque that bounces for insufficient funds is direct documentary evidence that the buyer lacked the financial capacity to perform at that time, undermining both elements simultaneously.
+### Did the buyers lose because their cheques bounced?
+No. Dishonours occurred early in the transaction but were made good — a dishonoured ₹25,00,000 cheque was replaced by cash instalments of ₹15,00,000 and ₹10,00,000 and the cheque returned. The Court accepted that the buyers may have been willing and able to complete. It refused relief because of their later conduct.
 
-### Does this case apply to agreements executed after the Specific Relief (Amendment) Act, 2018?
-The 2004 agreement in this case was governed by the unamended, discretionary Section 20 regime. The 2018 amendment, which makes specific performance the default remedy subject to Sections 11(2), 14 and 16, applies only prospectively, so the discretionary weight given to delay in this judgment is most directly relevant to pre-October 2018 agreements still working through the courts.
+### What conduct cost them the decree?
+Three things: a criminal complaint asking the police to recover the ₹85,00,000 advance while a suit for conveyance was pending; asserting in parallel proceedings that their rights had been assigned to a third party while denying any assignment in this suit; and agreeing to sell the property onward at a lower price while the original agreement subsisted.
 
-### Did the buyers get anything back after losing their claim for specific performance?
-Yes. The Supreme Court restored the trial court's order directing refund of the ₹85 lakh advance with interest. A Section 16(c) failure defeats the claim to conveyance of the property, not the buyer's right to recover money paid under the contract.
+### Does this case apply to agreements made after the 2018 amendment?
+Its discretionary reasoning is most directly relevant to pre-October 2018 agreements, which remain governed by the unamended Section 20. Conduct remains relevant after the amendment, but the framework within which it operates is different, and this judgment does not address post-amendment agreements.
 
-### What is the new rule on cross-objections that came out of this case?
-The Supreme Court clarified that a respondent who supports the decree under appeal, but wants to challenge a specific finding recorded against them, does not need to file formal cross-objections under Order 41 Rule 22 CPC — provided the respondent is not seeking any relief beyond what the decree already grants them.
+### Is a plaintiff who fails to obtain specific performance left with nothing?
+No. Here the buyers recovered their advance with interest at 15% per annum from the date of suit, secured by a charge on the property under Section 55(6)(b) of the Transfer of Property Act, 1882, and were permitted to withdraw the ₹1,40,00,000 they had deposited in 2011 with accrued interest.
 
-### How is this different from earlier cases on delay and price escalation, such as Saradamani Kandappan?
-Earlier authorities generally framed the delay question in terms of price escalation caused by the buyer sitting on the contract. Chandran treats the sheer duration of the litigation as relevant in its own right, without the judgment turning on a specific finding about market appreciation — though it does not dispense with the causation-sensitive analysis used elsewhere in this line of cases.
+### Must a respondent file cross-objections to challenge an adverse finding?
+Not where the respondent supports the decree and seeks no relief beyond it. The Court affirmed *S. Nazeer Ahmed v. State Bank of Mysore* (2007) on this point. Cross-objections remain necessary where the respondent wants something more than the decree already grants.
 
-### What should a buyer do if their financial position is uncertain at the time of tendering payment?
-Avoid instruments that can dishonour. Depositing funds into court, securing a bank guarantee backed by a confirmed facility, or otherwise creating a verifiable, honourable proof of funds is far safer than issuing a cheque that may bounce and thereby create a permanent record undermining the buyer's own case.
-
----
-
-## Conclusion
-
-*V.N.A.S. Chandran v. S. Venila & Others* is a compact but instructive addition to the specific performance jurisprudence, precisely because its facts are so unglamorous: a buyer tendered cheques towards a large real estate transaction, and those cheques bounced. That single, easily documented fact was enough to unravel two decades of litigation and a High Court decree in the buyer's favour. The judgment is a reminder that Section 16(c) is not satisfied by the *gesture* of performance; it is satisfied only by performance capable of being honoured, and any documentary trail suggesting otherwise will be read against the party who created it.
-
-The Court's willingness to treat the sheer passage of time — 22 years from agreement to final disposal — as an additional factor weighing against equitable relief, independent of any price-escalation finding, also deserves attention from anyone advising on long-pending property litigation. Combined with the Court's practical clarification on cross-objections under Order 41 Rule 22 CPC, this judgment offers both a substantive caution to buyers relying on uncertain finances and a useful procedural tool to respondents navigating multi-tier civil appeals.
-
-For practitioners, the operative lesson is straightforward: readiness and willingness must be provable with instruments that cannot fail, and delay — however caused — is never a neutral fact in an equity court's eyes.
+### Can a purchaser rely on her husband or attorney to conduct the litigation?
+Not safely. Plaintiff No. 1 neither disowned her husband's conduct nor gave evidence, and could not escape its consequences on the basis that he, not she, had acted. The named purchaser should testify.
 
 ---
 
-*Disclaimer: This article is general information on Indian law based on publicly reported summaries of the judgment in V.N.A.S. Chandran v. S. Venila & Others, 2026 INSC 776. It is not legal advice and does not create an attorney–client relationship. Readers should verify the full text of the judgment and any subsequent clarificatory orders before relying on it in proceedings, and consult a qualified advocate on the facts of their matter.*
+*This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*
