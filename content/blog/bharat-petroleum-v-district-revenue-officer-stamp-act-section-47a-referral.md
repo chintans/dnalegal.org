@@ -1,0 +1,119 @@
+---
+title: "Supreme Court Doubts the 'Fraudulent Intent' Test for Stamp Duty Undervaluation, Refers the Question to a Larger Bench"
+slug: "bharat-petroleum-v-district-revenue-officer-stamp-act-section-47a-referral"
+seoTitle: "Section 47-A Stamp Act: Supreme Court Refers Fraud-Intent Test"
+description: "The Supreme Court has doubted its own 2009 ruling that a stamp-duty undervaluation reference requires proof of fraudulent intent, and referred the question to a larger Bench, unsettling a standard used in sale-deed registrations nationwide."
+excerpt: "A two-judge Bench of the Supreme Court has cast doubt on a sixteen-year-old precedent requiring proof of dishonest intent before a registering authority can refer an undervalued sale deed for a stamp-duty enquiry — and referred the question to a larger Bench rather than decide it alone."
+category: "Property Law"
+tags:
+  - Indian Stamp Act 1899
+  - Section 47-A
+  - Stamp Duty
+  - Undervaluation
+  - Sale Deed Registration
+  - Conveyancing Due Diligence
+  - Supreme Court of India
+  - Reference to Larger Bench
+author: "DNA Legal"
+datePublished: 2026-09-08
+dateModified: 2026-09-08
+readingTime: "13 min"
+jurisdiction: "India"
+schema:
+  type: "LegalArticle"
+  faqPage: false
+canonical: "/insights/bharat-petroleum-v-district-revenue-officer-stamp-act-section-47a-referral"
+court: "Supreme Court of India"
+case: "Bharat Petroleum Corporation Limited v. The District Revenue Officer (Stamps) & Anr."
+citation: "2026 INSC 963 (Non-Reportable)"
+judgment_date: 2026-09-07
+---
+
+**Quick answer:** In *Bharat Petroleum Corporation Limited v. The District Revenue Officer (Stamps) & Anr.* (Civil Appeal arising out of SLP (C) No. 37096 of 2025), decided on 7 September 2026, a Bench of Justices Dipankar Datta and Sheel Nagu doubted the correctness of the Supreme Court's 2009 decision in *V.N. Devadoss v. Chief Revenue Control Officer-cum-Inspector of Stamps*, which had read a requirement of "wilful undervaluation with fraudulent intention to evade stamp duty" into Section 47-A of the Indian Stamp Act, 1899. Finding no such requirement in the provision's plain text, but unable to depart from a three-judge Bench decision on its own authority, the Bench referred two questions to the Chief Justice of India for consideration by a larger Bench, leaving the appeal itself undecided pending that reference.
+
+## 1. Introduction
+
+Section 47-A of the Indian Stamp Act, 1899 is, in practical terms, one of the most consequential provisions in the statute book governing the sale of Indian real estate. It is the mechanism by which a sub-registrar who suspects that a sale deed, gift deed or other instrument of transfer understates the true value of the property can refer the instrument to the Collector for a determination of the correct market value and the recovery of any shortfall in stamp duty. Because virtually every transfer of immovable property in India must be registered, and because registration is the moment at which this scrutiny occurs, Section 47-A (or its state-specific equivalent, since stamp duty is a subject on which states legislate within the Union framework) touches an enormous volume of ordinary conveyancing.
+
+Since 2009, registering authorities, Collectors, and the High Courts had broadly proceeded on the footing, laid down by a three-judge Bench of the Supreme Court in *V.N. Devadoss*, that this power could be exercised only where there was material suggesting that the undervaluation was wilful and intended to defraud the revenue — not merely mistaken, negligent, or the product of an honest disagreement about value. On 7 September 2026, a two-judge Bench of the Supreme Court, while hearing an appeal by Bharat Petroleum Corporation Limited against a Madras High Court order reviving a stamp-duty enquiry into its 2016 purchase of government land, expressed serious doubt about that reading. It found no textual basis in Section 47-A for a fraud requirement, illustrated the doctrinal difficulties that requirement creates, and — because it could not simply overrule a larger Bench — referred the question of *V.N. Devadoss*'s correctness to a Bench of appropriate strength.
+
+This article examines the reasoning behind that reference: the facts giving rise to it, the statutory and precedential terrain the Bench navigated, and what the resulting uncertainty means, in the interim, for anyone drafting, registering or defending a sale deed against a Section 47-A notice.
+
+## 2. Case Summary and Background
+
+The facts were undisputed. Bharat Petroleum Corporation Limited ("BPCL") purchased a parcel of land from the Government of India — the transferor being represented, in the instrument, by the Deputy/Assistant Salt Commissioner acting under the President of India's constitutional and statutory authority to contract in the exercise of the Union's executive power. The entire sale consideration was discharged through cheques issued in 2014, and possession of the land was delivered to BPCL on 21 January 2014. The deed of transfer itself, however, was executed only on 24 June 2016. When BPCL presented the deed for registration, it paid stamp duty and registration charges calculated on the full consideration recited in the instrument.
+
+Instead of releasing the registered instrument, the registering officer made a reference under Section 47-A to the District Revenue Officer, the Collector for this purpose, apparently on the basis that the guideline value of the land (₹500 per square foot) exceeded the value at which the instrument had been presented (₹168.30 per square foot). BPCL was served a show cause notice, in Form-I, on 22 August 2016, demanding additional stamp duty to cover the alleged deficit. BPCL challenged the reference and the notice directly by way of a writ petition before the Madras High Court, arguing that Section 47-A could not validly be invoked in the absence of any material suggesting want of bona fides on the part of either the buyer or the government seller.
+
+A Single Judge of the High Court agreed, and on 8 September 2022 quashed the show cause notice. Applying *V.N. Devadoss*, the Single Judge held that Section 47-A requires the registering authority to have reason to believe that the property was deliberately undervalued with fraudulent intent to evade duty; that the entire recited consideration had admittedly been paid; that no material existed showing any payment over and above that consideration; and that the guideline value, being an administrative tool for a different purpose, could not by itself constitute proof of the property's true market value. The registering officer was directed to release the transfer deed.
+
+The Revenue authorities appealed. A Division Bench of the High Court, in a judgment dated 4 September 2025, reversed the Single Judge and restored the Section 47-A proceedings to the Collector's file. It reasoned that Section 47-A provides a complete statutory mechanism — reference by the registering officer, adjudication by the Collector after a hearing, and an appeal to the District Judge under sub-section (5) for anyone aggrieved — and that BPCL, having chosen to challenge the show cause notice at the threshold rather than defend itself before the Collector, had bypassed an adequate alternative remedy. A writ court, the Division Bench held, ought not to adjudicate disputed questions of valuation before the statutory authority had even made its determination.
+
+BPCL then appealed to the Supreme Court by special leave. The Court framed the question before it narrowly: not what the true market value of the land is, nor whether BPCL is ultimately liable for any additional duty — both matters entrusted by the statute to the Collector in the first instance — but whether the Section 47-A machinery could validly have been set in motion at all, and what follows from a challenge to the absence of that jurisdictional precondition.
+
+## 3. Legal Analysis
+
+### 3.1 The statutory text and the narrow grounds for a threshold challenge
+
+Section 47-A(1) empowers a Registering Officer who, "has reason to believe that the market value of the property or the consideration…has not been truly set forth in the instrument," to refer the instrument, after registering it, to the Collector for determination of the correct market value or consideration and the duty payable. Sub-section (2) requires the Collector to determine the deficiency after giving the parties a hearing. Sub-section (3) gives the Collector an independent, suo motu power, exercisable within three years of registration, to call for and examine any instrument not already referred, for the same purpose. Sub-section (5) confers a right of appeal to the District Judge against the Collector's order, within thirty days. Sub-section (6) defines "market value" as the price the property would have fetched if sold in the open market on the date of the instrument.
+
+Before reaching the interpretive question, the Bench addressed maintainability. It held that a writ court may entertain a threshold challenge to a show cause notice only in two narrow situations: where the issuing authority lacks jurisdiction altogether, or where the power is exercised mala fide, as an abuse of process. These are exceptions, not a routine basis for litigating every show cause notice under Article 226 of the Constitution. Here, the District Revenue Officer was the authority the statute itself designates to receive and act on a Section 47-A reference; the case did not fall within the "no jurisdiction" exception merely because BPCL disputed the manner in which that existing jurisdiction was invoked.
+
+### 3.2 The precedent under strain: *V.N. Devadoss* and its afterlife
+
+The more consequential part of the judgment addresses the substantive standard governing Section 47-A. In *V.N. Devadoss v. Chief Revenue Control Officer-cum-Inspector of Stamps*, (2009) 7 SCC 438, a three-judge Bench had held — in the passages the Single Judge relied on — that "the basis for exercise of power under Section 47-A of the Act is wilful undervaluation of the subject of transfer with fraudulent intention to evade payment of proper stamp duty," and that the provision is "not a routine procedure to be followed in respect of each and every document of conveyance…without any evidence to show lack of bona fides." A later three-judge Bench, in *Registrar of Assurances v. ASL Vyapar (P) Ltd.*, (2024) 17 SCC 572, referred to and followed that formulation, though — as the present Bench noted — without revisiting the underlying statutory analysis, and while expressing disagreement with the earlier view specifically in the context of a court-monitored public auction, a narrower carve-out rather than a reconsideration of the general rule.
+
+Justice Datta's judgment, however, set the *V.N. Devadoss* formulation against the plain language of Section 47-A(1) and (3) and found a mismatch. Neither sub-section speaks of wilful conduct or fraudulent intent; each requires only that the registering authority or Collector have "reason to believe" that the market value or consideration "has not been truly set forth." Reading in an additional requirement of dishonest intent, the Bench held, converts what the statute frames as a valuation enquiry into something closer to a quasi-criminal enquiry into the parties' state of mind — a requirement Parliament did not write into the text, and one the Bench considered a matter of "judicial legislation" if pressed as an independent, textually unsupported precondition.
+
+The Bench drew support from an earlier, differently reasoned line of authority. In *Ramesh Chand Bansal v. District Magistrate/Collector*, (1999) 5 SCC 62, the Supreme Court had described the object of the Stamp Act as protecting state revenue against the common practice of undervaluing property in a sale deed, and had characterised the guideline or circle rate as merely a prima facie indicator that "helps the registering authority to assess the true valuation of a transaction," not evidence of intent one way or the other. And in a 2023 decision cited as *Shanti Bhushan v. State of U.P.*, the Court had reaffirmed the settled canon that a taxing statute — which the Stamp Act is — must be construed strictly and literally, with no scope to imply a condition the legislature did not expressly provide.
+
+To make the practical stakes concrete, the Bench posed two contrasting illustrations. In the first, an "honest sale," a seller's tenanted, litigation-encumbered property with poor road access is genuinely worth less than its circle rate, and an honest purchaser pays — and truthfully declares — that lower, defensible price. Under *V.N. Devadoss*'s test, the Bench observed, that purchaser would be forced to disprove fraudulent intent rather than simply prove the property's true value — an enquiry that shifts, unfairly, from valuation to character. In the second, a "fraudulent sale," a seller and buyer collude to under-declare the price in the instrument while settling the balance in unaccounted cash; here fraudulent intent genuinely exists, but the registering authority, working only from the face of the instrument, will typically have no way of detecting it — so a rule that makes proof of fraud a precondition to even opening an enquiry would, in the Bench's words, leave the enquiry "still-born" in precisely the cases the provision exists to catch. The *V.N. Devadoss* standard, on this analysis, is simultaneously too harsh on the honest and too lax on the dishonest.
+
+### 3.3 Why a reference, not a reversal
+
+Despite these doubts, the Bench could not simply decline to follow *V.N. Devadoss*. As a decision of a three-judge Bench, it binds a Bench of two, whatever the latter's own view of its correctness; "judicial propriety and discipline," in the Bench's own words, required that if the proposition does not commend acceptance and appears to warrant reconsideration, the appropriate course is to leave the question to a Bench of appropriate strength rather than to depart from it directly. Accordingly, the Court referred two questions to the Chief Justice: first, whether *V.N. Devadoss* — as followed in *ASL Vyapar* — correctly holds that Section 47-A requires proof of wilful, fraudulent undervaluation, or whether the provision can be invoked, on its own terms, to determine the true value and nature of a transaction irrespective of the parties' state of mind; and second, whether *Ramesh Chand Bansal* and *Shanti Bhushan* do not lay down the correct law. The Bench expressly left open which way the answer should go if *V.N. Devadoss* is ultimately upheld — in which case the Single Judge's order quashing the notice would stand vindicated — and which way if it is not.
+
+One feature of the order is worth flagging for anyone tracking the reference: it is marked "Non-Reportable" on its face, a designation that in ordinary usage signals limited precedential weight, notwithstanding that it doubts a settled three-judge Bench ruling and refers the point for authoritative resolution. Practitioners should not infer from that label that the reference lacks significance; it is, if anything, a reminder that a judgment's reportability marking and its practical importance to pending litigation can diverge.
+
+## 4. Practical Significance
+
+Until the larger Bench decides the reference, *V.N. Devadoss* remains binding law, and Section 47-A proceedings will continue, for now, to be litigated on the footing that a fraud-intent element is required. Parties currently defending a Section 47-A notice issued on nothing more than a guideline-value gap can still invoke *V.N. Devadoss*, but should register — for their own risk assessment and for advising clients — that its correctness is now formally under review, and that an eventual ruling against it would validate such notices without any further showing of dishonesty.
+
+For conveyancing and due diligence practice, the sensible course is to prepare as though either standard might ultimately prevail. Where a transaction is priced below the applicable guideline value for genuine, verifiable reasons — an existing tenancy protected by rent legislation, pending litigation affecting title or possession, restricted access, structural condition, or any other factor a valuer would recognise — that reasoning is worth documenting contemporaneously, whether in the recitals to the sale deed, in a valuation report obtained before execution, or in the due diligence file. Such material assists a purchaser under the *V.N. Devadoss* standard, by negating any inference of dishonest intent, and would assist equally under the plain-text standard the Bench has proposed, by supplying the Collector with an evidentiary basis for accepting the recited value as the true market value.
+
+For registering officers and Collectors, the judgment is, for now, a reminder that the threshold for judicial interference with a Section 47-A show cause notice remains narrow regardless of how the reference is eventually resolved: a notice issued by the authority the statute designates, on the basis of a bona fide reference, is not amenable to a writ challenge merely because the recipient disputes the valuation on the merits. The proper forum for that dispute is the enquiry before the Collector, and, if necessary, the statutory appeal to the District Judge under sub-section (5) — not a writ petition filed before that process has run its course.
+
+For litigants and their counsel weighing whether to challenge a Section 47-A notice at the threshold at all, the case is a caution against doing so except on the two recognised grounds — want of jurisdiction, or mala fide exercise of power. A challenge framed as a dispute about the substantive standard for invoking Section 47-A, without more, risks the same fate BPCL's petition met at the Division Bench stage: dismissal for failure to exhaust an adequate statutory remedy, irrespective of how the fraud-intent question is ultimately resolved.
+
+Finally, because most Indian states' stamp legislation contains a Section 47-A analogue closely modelled on the Indian Stamp Act's own provision — the judgment itself notes, for instance, a proviso confined to instruments registered after a particular Himachal Pradesh amendment, and the Tamil Nadu-specific Undervaluation Rules governing the reference before the Collector — the reference is likely to be watched well beyond Tamil Nadu. Registering authorities, Collectors and courts elsewhere applying textually similar provisions will have reason to track the larger Bench's eventual answer, even though it will not bind them until delivered.
+
+## 5. Conclusion
+
+The Supreme Court's order in *Bharat Petroleum Corporation Limited v. District Revenue Officer (Stamps)* leaves BPCL's own stamp-duty dispute over its 2016 purchase exactly where it was — pending, and dependent on an answer the Court has not yet given. What the order does resolve, in the near term, is something arguably more consequential for the profession: a formal acknowledgment, from the Supreme Court itself, that the fraud-intent gloss placed on Section 47-A by *V.N. Devadoss* in 2009 may rest on a reading the provision's own text does not support, illustrated through the Bench's honest-sale and fraudulent-sale hypotheticals as producing results at odds with the provision's evident revenue-protective purpose. Because that doubt could not be acted upon directly, given *V.N. Devadoss*'s standing as a three-judge Bench decision, the question now goes to a larger Bench for authoritative resolution.
+
+Until that Bench rules, the safest course for anyone drafting, registering, or defending a sale deed against a Section 47-A reference is to treat both possible outcomes as live: document the objective basis for any below-guideline valuation as though proof of good faith may still matter, while recognising that the provision may soon be read, on its plain terms, to require nothing more than a genuine mismatch between recited and true value. Given the volume of registrations this provision touches every year, the larger Bench's eventual answer to the two referred questions is likely to be one of the more closely watched property-law rulings to follow from this reference, whenever it comes.
+
+## Citations
+
+**Primary judgment**
+
+- *Bharat Petroleum Corporation Limited v. The District Revenue Officer (Stamps) & Anr.*, Civil Appeal arising out of SLP (C) No. 37096 of 2025, Supreme Court of India, 2026 INSC 963 (Non-Reportable), decided 7 September 2026 (Coram: Dipankar Datta, J. and Sheel Nagu, J.; judgment authored by Dipankar Datta, J.). The civil appeal number itself is shown as blank in the retrieved text (leave having been granted on the day of decision) and is accordingly cited here by the underlying SLP number. Source: [Indian Kanoon](https://indiankanoon.org/doc/86946203/), accessed 8 September 2026.
+
+**Precedents relied on, as recorded in the judgment**
+
+- *V.N. Devadoss v. Chief Revenue Control Officer-cum-Inspector of Stamps*, (2009) 7 SCC 438, Supreme Court of India (three-judge Bench), quoted from paragraphs 13 and 18 of that decision; its correctness is doubted by the present Bench and referred for reconsideration by a larger Bench.
+- *Registrar of Assurances v. ASL Vyapar (P) Ltd.*, (2024) 17 SCC 572, Supreme Court of India (three-judge Bench), cited in the primary judgment as having followed *V.N. Devadoss*'s fraud-intent formulation while expressing disagreement with it specifically in the context of a court-monitored public auction; not independently retrieved for this article.
+- *Ramesh Chand Bansal v. District Magistrate/Collector*, (1999) 5 SCC 62, Supreme Court of India, quoted from paragraph 5 of that decision on the revenue-protective object of the Stamp Act and the prima facie character of guideline/circle-rate values; not independently retrieved for this article.
+- *Shanti Bhushan v. State of U.P.*, cited in the primary judgment with the citation "2023 SCC OnLine SC 489," quoted from paragraph 20 of that decision on the strict, literal construction of taxing statutes; not independently retrieved for this article. Note on citation accuracy: the primary judgment's own footnote for this case records the identical citation given, at an earlier footnote, for *Union of India v. VICCO Laboratories* (see below) — this appears to be a footnoting error in the source judgment itself, and the citation for *Shanti Bhushan* is accordingly flagged here as unverified rather than restated as certain.
+- *Special Director v. Mohd. Ghulam Ghouse*, (2004) 3 SCC 440, Supreme Court of India, cited in the primary judgment by counsel for the respondents on the limited grounds for a writ court to interdict a show cause notice; not independently retrieved for this article.
+- *Union of India v. Kunisetty Satyanarayana*, (2006) 12 SCC 28, Supreme Court of India, cited in the primary judgment by counsel for the respondents on the same point; not independently retrieved for this article.
+- *Union of India v. VICCO Laboratories*, cited in the primary judgment with the citation "2023 SCC OnLine SC 489," cited by counsel for the respondents on the same point; not independently retrieved for this article.
+
+**Statutory and regulatory provisions engaged**
+
+- Section 47-A of the Indian Stamp Act, 1899, and Article 226 of the Constitution of India, as set out and construed in the primary judgment.
+- The Tamil Nadu Stamp (Prevention of Undervaluation of Instruments) Rules, 1968, in particular Rule 9 (appellate authority), as referred to in the primary judgment.
+
+---
+
+*This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*
