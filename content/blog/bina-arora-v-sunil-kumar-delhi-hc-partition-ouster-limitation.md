@@ -1,0 +1,119 @@
+---
+title: "Delhi High Court: Absence From a Property Is Not Ouster — Partition Decreed on Admissions"
+slug: "bina-arora-v-sunil-kumar-delhi-hc-partition-ouster-limitation"
+seoTitle: "Bina Arora v. Sunil Kumar: Ouster, Limitation and Partition on Admissions"
+description: "The Delhi High Court upheld a preliminary decree of partition passed under Order XII Rule 6 CPC, holding that a co-owner's decades-long physical absence from a family property does not amount to ouster, and that the limitation period for partition runs from denial of the co-owner's share, not from the date possession changed hands."
+excerpt: "In a first appeal from a preliminary decree of partition, the Delhi High Court held that a co-owner who had not lived in a family flat since 1993 remained a co-owner in constructive possession, because the party in physical occupation never pleaded facts showing hostile, exclusive possession to his knowledge. The court also held the partition suit was within limitation, since the cause of action accrued only when the co-owner's share was expressly denied in 2018 — and that these questions could be resolved on admitted pleadings under Order XII Rule 6 of the Code of Civil Procedure, without a trial."
+category: "Property Law"
+tags:
+  - Partition Suit
+  - Ouster
+  - Co-ownership
+  - Order XII Rule 6 CPC
+  - Limitation Act
+  - Intestate Succession
+  - Constructive Possession
+  - Delhi High Court
+author: "DNA Legal"
+datePublished: 2026-09-20
+dateModified: 2026-09-20
+readingTime: "13 min"
+jurisdiction: "India"
+schema:
+  type: "LegalArticle"
+  faqPage: false
+canonical: "/insights/bina-arora-v-sunil-kumar-delhi-hc-partition-ouster-limitation"
+court: "Delhi High Court"
+case: "Bina Arora v. Sunil Kumar & Ors."
+citation: "RFA 1007/2026, CM APPL. 62450/2026 & 62452/2026; CNR No. DLHC010435362026; not marked reportable or non-reportable in the retrieved text"
+judgment_date: 2026-09-18
+---
+
+**Quick answer:** In *Bina Arora v. Sunil Kumar & Ors.*, decided on 18 September 2026, the Delhi High Court dismissed a first appeal against a preliminary decree of partition passed under Order XII Rule 6 of the Code of Civil Procedure, 1908. The plaintiff had not physically resided in the family flat since 1993, but the court held that his sister-in-law's continued occupation did not amount to ouster, because she never pleaded facts showing her possession was hostile, exclusive and adverse to his knowledge. The suit was also held to be within limitation, since the cause of action for partition accrued only in 2018, when the plaintiff's claim to a share was expressly denied — not decades earlier, when he moved out.
+
+## 1. Introduction
+
+Indian partition litigation between family members frequently turns less on who holds title — that is often undisputed — than on two subsidiary questions: has the party out of possession been ousted, so as to lose the co-ownership the law would otherwise presume, and if not, when did the limitation clock for a partition suit actually start running? Both questions recur because Indian succession commonly produces several co-owners of a single family property, some of whom live in it and some of whom do not, for reasons of marriage, employment or family arrangement rather than any assertion of exclusive right. Courts have answered the first question with a consistently protective doctrine: co-ownership is not lost by mere non-residence, only by proven ouster.
+
+On 18 September 2026, the Delhi High Court applied that doctrine to a dispute over a Delhi Development Authority ("DDA") flat that had belonged to a man who died intestate in 1988. His elder son, who had lived away from the flat since 1993, sued in 2019 for partition against his brother's widow and her son, who had continued to occupy it, and against his sister, who eventually relinquished her share in his favour. The trial court decided the case on admissions in the pleadings alone, without recording evidence, and passed a preliminary decree of partition. The occupying sister-in-law appealed, arguing that she had been in exclusive possession for over two decades, that the suit was time-barred, and that a partition of this kind could not properly be decided without a trial. Justice Neena Bansal Krishna rejected all three contentions and dismissed the appeal.
+
+This article examines the judgment's two central doctrinal strands — the test for ouster between co-owners, and the accrual of limitation in a partition suit — together with its treatment of Order XII Rule 6 CPC as a vehicle for deciding a partition claim without oral evidence, and sets out what each holding means for practitioners drafting or defending family property litigation.
+
+## 2. Case Summary and Background
+
+Late Sh. R. L. Arora purchased Flat No. H-320, Naraina Vihar, New Delhi in 1971, initially on a leasehold allotment; the DDA executed a Conveyance Deed in his favour on 27 July 1987. He died intestate on 4 June 1988, survived by four legal heirs: his elder son Sunil Kumar Arora (the plaintiff and eventual respondent), his younger son Devender Kumar Arora, his wife Rama Arora, and his daughter Vandana Murgai. Devender Kumar Arora had married Bina Arora (the appellant, defendant no. 1) in 1983 and initially moved out of the flat with her, but the couple returned to live there in 1996, ten years before Devender's own death in 2006. Their son, Naman Arora, was defendant no. 2.
+
+The plaintiff's case was that he had lived in the flat along with the family until 1993, after which he moved out but remained, as a matter of law, a co-owner in constructive joint possession. His daughter's marriage in 1993 similarly took her out of daily residence at the flat without affecting her share. On the plaintiff's account, tension arose principally after his mother, Rama Arora, then elderly and reportedly suffering from Alzheimer's disease, was said to have been prevented by Bina Arora from receiving his visits and medical assistance; a complaint to the Delhi Commission for Women in 2018 and an exchange of legal notices followed, in which Bina Arora, for the first time, expressly denied the plaintiff any share in the property. He filed the partition suit in January 2019.
+
+Bina Arora and her son resisted the suit on two grounds relevant to this appeal: that it was barred by Article 113 of the Limitation Act, 1963 (the residuary three-year limitation article), and that the plaintiff had been ousted from the property since 1993 and therefore had no possession — actual, constructive or otherwise — capable of supporting a claim for partition. They did not dispute that the flat had originally devolved in equal one-fourth shares among the four legal heirs on R. L. Arora's intestacy; their defence was that the plaintiff's rights had since lapsed through exclusion.
+
+The litigation had two procedural stages before reaching the merits considered in this appeal. First, the defendants applied under Order VII Rule 11 CPC to reject the plaint as time-barred; the trial court dismissed that application, a decision the Delhi High Court itself upheld on revision in July 2025, observing that limitation in this case raised a mixed question of fact and law requiring trial rather than summary rejection. Second, the plaintiff then applied under Order XII Rule 6 CPC — which empowers a court to pass judgment on admissions made in the pleadings, without waiting for a full trial — for a preliminary decree of partition. The trial court allowed that application on 21 April 2026, holding that the plea of ouster was not made out on the defendants' own written statement, that the suit was within limitation because the cause of action arose only in 2018, and that the four original one-fourth shares should be recalculated to account for Rama Arora's death during the suit's pendency and Vandana Murgai's subsequent registered deed relinquishing her share in the plaintiff's favour. It accordingly decreed the plaintiff, the defendants jointly, and the daughter each a one-third share, and Bina Arora appealed.
+
+## 3. Legal Analysis
+
+### 3.1 The ouster test: hostile, exclusive, and to the co-owner's knowledge
+
+The appeal's principal substantive argument was that Bina Arora's long, uninterrupted physical occupation of the flat — from 1996 until the date of suit — had ripened into exclusive ownership, extinguishing the plaintiff's co-ownership by ouster. The court rejected this on a settled formulation of the ouster doctrine: a co-owner in physical possession does not become the exclusive owner merely by occupying the property to the practical exclusion of others; the party asserting ouster must plead and establish that the possession was hostile to the other co-owners' title, held with their knowledge, and intended and understood by all concerned to be an assertion of exclusive right rather than an accommodation among family members. The court applied this standard by reference to the Supreme Court's decision in *Nagabhushanammal (D) by LRs. v. C. Chandikeswaralingam*, which held that a co-owner cannot claim exclusive title merely by virtue of possession unless that possession is shown to be in denial of the other co-owners' title and hostile to them by way of exclusion.
+
+Measured against that standard, the pleaded facts fell well short. Bina Arora's own written statement admitted that during her mother-in-law's lifetime the plaintiff continued to visit the flat — a fact inconsistent with a claim of unequivocal, continuous exclusion — even as it also alleged that his visits caused friction. The court treated this admission as fatal to the ouster plea: a co-owner who visits, however unwelcome those visits may be to the occupants, has not been excluded in the legal sense the doctrine requires. Nor did the pleadings assert that Bina Arora's possession, following her marriage to a co-sharer and her return to the flat at her mother-in-law's invitation, had at some later point transformed into a hostile, ownership-asserting possession adverse to the plaintiff. Possession that begins permissively, as between family co-owners, does not become adverse merely through the passage of time or the intensity of the possessor's use; it becomes adverse only when the possessor does something, and communicates something, that puts the excluded co-owner on notice that his title is being denied.
+
+The court also rejected the suggestion that the plaintiff's own extended absence — nearly a quarter-century by the time suit was filed — could itself constitute self-ouster. Non-residence by a co-owner does not, without more, extinguish that co-owner's rights: he remains, in the court's words, in "constructive legal possession along with the other co-sharers," a fiction that protects co-owners who, for reasons of employment, marriage or family arrangement, do not physically occupy jointly owned property at every point in time. A rule that penalised absence alone would convert ordinary domestic arrangements into an unintended forfeiture of inheritance.
+
+### 3.2 Limitation: accrual runs from denial, not from absence
+
+The appellant's second ground was that the suit was barred by limitation, given the plaintiff's absence from the property since 1993. The court's answer follows directly from its ouster finding: because there was no established ouster of the plaintiff from his ownership at any point before 2018, Article 110 of the Limitation Act, 1963 — which governs a suit by a person excluded from joint family property to enforce a right to share in it, and runs from the date the exclusion becomes known — had no application at all. There having been no exclusion, there was no date from which such a limitation period could begin to run.
+
+Instead, the court traced the cause of action to a concrete, dated exchange: a legal notice from Bina Arora dated 14 August 2018, the plaintiff's reply of 29 August 2018 asserting his claim to a share, and Bina Arora's letter of 10 September 2018 expressly refusing to recognise it. It was this refusal — not the plaintiff's 1993 move, nor any earlier ambiguity in the family's living arrangements — that the court identified as the moment the plaintiff's title was first denied, and therefore the moment his cause of action for partition accrued. The suit, filed on 10 January 2019, comfortably fell within limitation measured from that date, whether under Article 113's residuary three-year period or any comparable partition-specific provision.
+
+The appellant sought to resist this conclusion by invoking the High Court's own earlier order in the connected revision petition, which had held — in the different context of an Order VII Rule 11 application to reject the plaint — that limitation in this matter was a mixed question of fact and law that could not be decided without trial. She argued that this observation foreclosed a later decision on the same question by way of judgment on admissions. The court distinguished the two contexts: the earlier order addressed whether the plaint could be rejected at the threshold on the footing that limitation was apparent from the plaint alone, a narrower inquiry than whether, once written statements were filed, the parties' own admitted pleadings sufficed to resolve the question without oral evidence. For that inquiry, the court invoked the Supreme Court's 2026 decision in *N. Asha Devi v. R. Aravind Kumar & Anr.*, which reiterated that although limitation is ordinarily a mixed question of fact and law, a court may still decide it without a full trial where the position is apparent from the parties' own pleaded case. "Mixed question of fact and law," on this reading, does not mean "always requires oral evidence"; where the pleaded facts themselves resolve the question without any contradiction requiring cross-examination, a summary determination remains permissible.
+
+### 3.3 Order XII Rule 6 as a route to a partition decree
+
+The third strand of the appeal challenged the propriety of deciding a partition claim — ordinarily thought to be evidence-heavy, given the family history, competing narratives of exclusion, and disputed dates involved — under Order XII Rule 6 CPC, which allows judgment on admissions "either on the application of any party or of its own motion" without waiting for the determination of any other question between the parties. The appellant argued that her pleadings raised triable issues of fact going to both ouster and limitation, and that a preliminary decree could not properly be passed without giving her the opportunity to lead evidence on those issues.
+
+The court's answer illustrates the proper scope of Order XII Rule 6: it does not require a formal, sentence-by-sentence admission of the plaintiff's entire case, but permits a decree where the admitted facts, read as a whole, leave no genuine dispute on the elements the decree requires. Here, ownership of the flat, its devolution among four legal heirs on intestacy, the family relationships, and the chronology of the 2018 correspondence were none of them disputed. What remained in controversy — the ouster plea — failed not because evidence might have altered the picture, but because the defence's own written statement, taken at its highest, did not plead facts capable of establishing ouster even if fully believed. Where a defence is legally insufficient on its own averments, a trial adds nothing; Order XII Rule 6 exists precisely to spare the parties that expense. Resistance to a partition decree, in other words, must be pleaded with the specific ingredients the ouster doctrine demands — hostility, exclusivity, and communicated denial of title — and generalised assertions of long possession, without those ingredients, will not survive a properly framed application on admissions.
+
+### 3.4 Adjusting shares for subsequent events
+
+A final, more technical point concerns how the court handled two events that occurred after suit but before decree: the death of Rama Arora, the mother, during the suit's pendency, and Vandana Murgai's execution of a registered deed relinquishing her one-fourth share to the plaintiff. The trial court factored both into its one-third-each calculation without requiring a formal amendment of the plaint, and the High Court approved that approach: subsequent events materially altering entitlements can be taken into account without the rigidity of a fresh pleading, provided — as here — the underlying facts (death, and a relinquishment deed whose genuineness the relinquishing party had herself admitted) were placed on record and undisputed. The court went further, directing that the final decree reflect the relinquishment by allocating the daughter's one-third share to the plaintiff, producing a final split of two-thirds to the plaintiff and one-third jointly to the defendants — a modification favourable to the respondent that the appellant's own appeal occasioned the court to make explicit.
+
+## 4. Practical Significance
+
+For practitioners drafting a defence to a partition suit on the basis of long possession, this judgment sets out precisely what must be pleaded, and it is more than assertion of duration. A defendant must plead specific facts showing that possession was taken up, or later transformed, in a manner hostile to the other co-owners' title; that this hostility was communicated or otherwise made known to them; and that it was maintained openly and continuously thereafter. A written statement that concedes ongoing family visits by the plaintiff, however contentious those visits, will generally defeat an ouster plea on its own terms, regardless of how emphatically exclusive possession is otherwise asserted. Advocates should audit their own client's pleaded narrative for precisely this kind of internal inconsistency before relying on an ouster defence.
+
+For plaintiffs and their advisors, the judgment confirms that physical absence from a family property, even for decades, does not by itself jeopardise a co-owner's share, and that limitation runs from the date of a clear, dated denial of title — a letter, a notice, or an equivalent unambiguous refusal — rather than from any earlier date of moving out or reduced contact. A plaintiff anticipating a limitation objection should plead, with dates, the specific communication that first denied the claimed share, since that date will anchor the limitation computation in their favour.
+
+For litigators considering an Order XII Rule 6 CPC application in partition proceedings, the judgment is useful authority that such an application can succeed even where the opposing pleadings gesture toward disputed issues, provided those pleadings, examined closely, do not actually supply the specific factual elements a full defence would require. Defendants, conversely, should recognise that a bare denial or a general claim of exclusive enjoyment, unaccompanied by the particulars ouster demands, invites exactly this kind of summary decree.
+
+For families structuring the informal arrangements common in Indian joint households — where one branch occupies inherited property while another does not — the case is a caution that such arrangements, however long-standing, do not silently convert into exclusive ownership. Anyone genuinely intending to acquire a co-owner's share by ouster, rather than by purchase, gift or relinquishment, must take the additional, deliberate step of asserting and communicating that hostile claim; passive continuation of occupation preserves rather than defeats the other co-owners' entitlement, which is why families wishing to finally settle such arrangements should do so by an express relinquishment deed, as Vandana Murgai did here, rather than by relying on the passage of time.
+
+## 5. Conclusion
+
+*Bina Arora v. Sunil Kumar & Ors.* restates, rather than reshapes, the law of co-ownership and ouster, but it does so through a fact pattern common enough in Indian family litigation to make the restatement useful: a sibling who moved away decades ago, a sibling-in-law who stayed, and a dispute that surfaces only when family relations sour over the care of an elderly parent. The judgment's real contribution lies in showing how three doctrines interact procedurally — the ouster test, the accrual of limitation from denial rather than absence, and the availability of Order XII Rule 6 CPC to resolve a partition claim without trial once the pleadings themselves foreclose a viable defence. For advocates on either side of a family partition dispute, the case is a reminder that these are three separate hurdles, each with its own specific evidentiary requirements, and that a defence which fails to clear the first — a properly pleaded ouster — will rarely be rescued by generalised appeals to the passage of time or the need for a fuller trial.
+
+## Citations
+
+**Primary judgment**
+
+- *Bina Arora v. Sunil Kumar & Ors.*, RFA 1007/2026 with CM APPL. 62450/2026 & 62452/2026, CNR No. DLHC010435362026, High Court of Delhi (Neena Bansal Krishna, J.), reserved 15 September 2026, pronounced 18 September 2026; reportable status not stated in the retrieved text. Source: [Indian Kanoon](https://indiankanoon.org/doc/25964386/), accessed 20 September 2026.
+
+**Cases cited in the judgment**
+
+- *Nagabhushanammal (D) by LRs. v. C. Chandikeswaralingam*, Civil Appeal Nos. 1858–1859/2016, Supreme Court of India, decided 26 February 2016 (test for ouster between co-owners: possession must be hostile to, and in denial of, the title of the other co-owners, to their exclusion and knowledge).
+- *N. Asha Devi v. R. Aravind Kumar & Anr.*, 2026 INSC 908, Supreme Court of India (limitation is ordinarily a mixed question of fact and law, but may be decided without trial where the position is apparent from the pleadings).
+- *Balasaria Construction Private Limited v. Hanuman Seva Trust & Ors.*, Civil Appeal No. 4539/2003, Supreme Court of India, decided 8 November 2005 (cited by the appellant for the proposition that a suit cannot be dismissed as time-barred without proper pleadings, framing of the limitation issue, and evidence; distinguished on the facts).
+- *Brigadier (Retd.) Shyam Prasada v. Smt. Dayavati & Others*, CS(OS) 1113/2008, High Court of Delhi (cited by the appellant on limitation as a mixed question of fact and law in a partition suit; distinguished on the facts).
+- *Ramesh Kumar v. Kishori Lal and Others*, CS(OS) 2723/2014, High Court of Delhi, referring to *Amrit Kaur v. Sarabjeet Singh & Others*, 153 (2008) DLT 392 (cited by the appellant for the proposition that "exclusion" is a fact-specific inquiry turning on the parties' intention).
+
+**Statutory provisions engaged**
+
+- Section 96 and Order XLI, Code of Civil Procedure, 1908 (first appeal from an original decree).
+- Order XII Rule 6, Code of Civil Procedure, 1908 (judgment on admissions, the basis of the preliminary decree under appeal).
+- Order VII Rule 11, Code of Civil Procedure, 1908 (rejection of plaint, the subject of the earlier, separately decided application referred to in the judgment).
+- Article 110 and Article 113, Limitation Act, 1963 (limitation for a suit by a person excluded from joint family property to enforce a share, and the residuary limitation article respectively; the judgment holds Article 110 inapplicable on the facts).
+
+*The Hindu Succession Act, 1956 is the general statutory backdrop against which R. L. Arora's intestate estate devolved equally among his widow and children, but it is not cited by name in the primary judgment; this article's reference to it is background framing, not an authority relied upon in the decision itself.*
+
+---
+
+*This article is not legal advice and does not create an attorney–client relationship. Readers should verify the certified copy of the judgment and any subsequent clarificatory orders before relying on it, and consult a qualified advocate on the facts of their matter.*
