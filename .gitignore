@@ -24,3 +24,10 @@ pnpm-debug.log*
 .idea/
 
 .early.coverage
+
+# graphify: commit graph.json, GRAPH_REPORT.md, wiki/ and graph.html; ignore intermediates and cache
+graphify-out/cache/
+graphify-out/.graphify_*
+graphify-out/.subagent_*
+graphify-out/manifest.json
+graphify-out/cost.json
