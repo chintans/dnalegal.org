@@ -1,0 +1,13 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://dnalegal.org/sitemap.xml",
+      "service-desc": [
+        { "href": "https://dnalegal.org/sitemap.xml", "type": "application/xml" }
+      ],
+      "service-doc": [
+        { "href": "https://dnalegal.org/insights", "type": "text/html" }
+      ]
+    }
+  ]
+}
