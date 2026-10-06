@@ -1,3 +1,9 @@
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog"
+  Link: </sitemap.xml>; rel="service-desc"; type="application/xml"
+  Link: </insights>; rel="service-doc"; type="text/html"
+  Link: </sitemap.xml>; rel="describedby"; type="application/xml"
+
 /.well-known/api-catalog
   Content-Type: application/linkset+json
   Access-Control-Allow-Origin: *
