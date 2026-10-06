@@ -18,7 +18,9 @@ async function* walk(dir) {
 let count = 0;
 for await (const file of walk(DIST)) {
   const html = await readFile(file, 'utf8');
-  const title = html.match(/<title>([^<]*)<\/title>/)?.[1]?.trim();
+  const title = html.match(/<title>([^<]*)<\/title>/)?.[1]
+    ?.trim()
+    .replace(/&amp;/g, '&');
   const main = html.match(/<main[\s\S]*<\/main>/)?.[0] ?? html.match(/<body[\s\S]*<\/body>/)?.[0] ?? html;
   const body = nhm.translate(main).trim();
   await writeFile(file.replace(/\.html$/, '.md'), `${title ? `# ${title}\n\n` : ''}${body}\n`);
